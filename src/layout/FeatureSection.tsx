@@ -7,7 +7,7 @@ interface Props {
 export default function FeatureSection({ children }: Props) {
   return (
     <>
-      <div className="container mx-auto flex flex-wrap gap-5 justify-center">
+      <div className="container mx-auto flex flex-wrap gap-5 justify-center px-2">
         {children}
       </div>
     </>

@@ -14,7 +14,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
       {/* <pre slot="react" style={{ marginBottom: "0px", marginTop: "0px" }} /> */}
 
       <div className="navbar bg-slate-100 dark:bg-app-color-900 shadow-md sticky top-0 sm:my-10 z-10">
-        <div className="flex-none">
+        {/* <div className="flex-none">
           <button className="btn btn-square btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
               ></path>
             </svg>
           </button>
-        </div>
+        </div> */}
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">eCalenda</a>
         </div>
@@ -38,9 +38,9 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <a>Updates</a>
             </li>
-            <li tabIndex={0}>
+            {/* <li tabIndex={0}>
               <a>
                 Parent
                 <svg
@@ -61,7 +61,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
                   <a>Submenu 2</a>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li>
               {/* <a>Item 3</a> */}
               <label className="swap swap-rotate">
@@ -84,7 +84,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
             </li>
           </ul>
         </div>
-        <div className="flex-none">
+        {/* <div className="flex-none">
           <button className="btn btn-square btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
               ></path>
             </svg>
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );

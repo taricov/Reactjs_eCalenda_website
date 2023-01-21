@@ -25,7 +25,7 @@ export default function Pricing() {
               Start your eCalenda right away!
             </p>
           </div>
-          <div className="flex justify-center bg-app-color-50 px-5 py-2 rounded-2xl mx-auto w-1/3">
+          <div className="flex justify-center bg-app-color-50  px-5 py-2 rounded-2xl mx-auto sm:w-2/3 lg:w-1/3 w-3/4">
             <label className="label cursor-pointer flex gap-5">
               <span className="label-text text-app-color-900 text-lg w-[120px] ">
                 Billing {!priceToggle ? "Monthly" : "Yearly"}
@@ -40,9 +40,9 @@ export default function Pricing() {
             </label>
           </div>
 
-          <div className="pt-16 flex flex-col md:flex-row gap-5">
+          <div className="pt-16 flex flex-col lg:flex-row gap-5 items-center sm:justify-start">
             {/* Basic Card */}
-            <div className="w-96 p-8 bg-white text-center rounded-3xl pr-16 shadow-xl">
+            <div className="sm:w-96 w-fit p-8 bg-white text-center rounded-3xl pr-4 sm:pr-16 shadow-xl">
               {/* <h1 className="text-black font-semibold text-2xl">Basic</h1> */}
               <p className="pt-2 tracking-wide">
                 {/* <span className="text-gray-400 align-top">$ </span> */}
@@ -89,7 +89,7 @@ export default function Pricing() {
             </div>
 
             {/* StartUp Card */}
-            <div className="md:w-80 w-96 p-8 bg-gray-900 text-center rounded-3xl text-white border-4 shadow-xl border-white transform md:scale-125 scale-100">
+            <div className="sm:w-80 w-fit p-8 bg-gray-900 text-center rounded-3xl text-white border-4 shadow-xl border-white transform sm:scale-125 md:scale-125 my-0 sm:my-10 md:my-10 lg:my-0 scale-100">
               <h1 className="text-white font-semibold text-2xl">Startup</h1>
               <p className="pt-2 tracking-wide">
                 <span className="text-gray-400 align-top">$ </span>
@@ -138,7 +138,7 @@ export default function Pricing() {
               </div>
             </div>
             {/* Enterprise Card */}
-            <div className="w-96 p-8 bg-white text-center rounded-3xl pl-16 shadow-xl">
+            <div className="sm:w-96 w-fit p-8 bg-white text-center rounded-3xl sm:pl-16 pl- shadow-xl">
               <h1 className="text-black font-semibold text-2xl">Custom</h1>
               <p className="pt-2 tracking-wide">
                 <span className="text-3xl font-semibold">Contact Us</span>
