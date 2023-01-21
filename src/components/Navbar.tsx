@@ -1,7 +1,5 @@
 import { createContext, Dispatch, SetStateAction, useState } from "react";
 
-// type Dispatch<A> = (value: A) => void;
-
 interface Props {
   darkMode: boolean;
   darkModeHandler: Dispatch<SetStateAction<boolean>>;
