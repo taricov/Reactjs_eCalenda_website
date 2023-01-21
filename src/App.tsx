@@ -1,16 +1,28 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import FeatureCard from "./components/FeatureCard";
 import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 import FeatureSection from "./layout/FeatureSection";
+import "./index.css";
+import LogoBanner from "./components/LogoBanner";
 
 function App() {
   const [isDark, setDark] = useState<boolean>(true);
-
+  // document.querySelector("body")?.classList.add()
   // const [count, setCount] = useState(0);
-
+  const darkModeBGClasses = [
+    "bg-gradient-to-l",
+    "from-black",
+    "to-app-color-900",
+  ];
+  useEffect(() => {
+    isDark
+      ? document.body.classList.add(...darkModeBGClasses)
+      : document.body.classList.remove(...darkModeBGClasses);
+  }, [isDark]);
   return (
-    <div className={`App ${isDark ? "dark" : "light"}`}>
+    <div className={`App ${isDark ? "dark" : "light"} `}>
+      <LogoBanner />
       <Navbar darkMode={isDark} darkModeHandler={setDark} />
       {/* <FeatureSection> */}
       <FeatureSection>

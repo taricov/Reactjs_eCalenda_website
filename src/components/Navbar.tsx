@@ -11,9 +11,9 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
   };
   return (
     <>
-      <pre slot="react" style={{ marginBottom: "0px", marginTop: "0px" }} />
+      {/* <pre slot="react" style={{ marginBottom: "0px", marginTop: "0px" }} /> */}
 
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-slate-100 dark:bg-app-color-900 shadow-md sticky top-0 sm:my-10 z-10">
         <div className="flex-none">
           <button className="btn btn-square btn-ghost">
             <svg
@@ -32,7 +32,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
           </button>
         </div>
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="btn btn-ghost normal-case text-xl">eCalenda</a>
         </div>
 
         <div className="flex-none">

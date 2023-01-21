@@ -133,7 +133,7 @@ export default function Pricing() {
               </div>
               <div className="absolute top-4 right-4">
                 <p className="bg-app-color-500 font-semibold px-4 py-1 rounded-full uppercase text-xs">
-                  Popular
+                  Startup
                 </p>
               </div>
             </div>

@@ -78,21 +78,25 @@ export default function FeatureCard({
 
   return (
     <>
-      <div className="relative block rounded-xl border border-slate-800 px-8 pt-3 pb-8 shadow-xl max-w-[400px] overflow-hidden">
-        <span className="absolute right-4 top-4 rounded-full bg-green-100 px-3 py-1.5 text-xs font-medium text-green-600">
+      <div className="relative block rounded-2xl px-8 pt-3 pb-8 shadow-xl max-w-[400px] overflow-hidden dark:bg-app-color-900 ">
+        <span className="absolute right-4 top-4 rounded-full bg-app-color-200 text-app-color-600 dark:text-app-color-50 dark:bg-opacity-20 px-3 py-1.5 text-xs font-medium">
           4.3
         </span>
 
         <div className=" text-gray-500 sm:pr-4">
-          <span className="material-icons text-4xl">{iconName}</span>
+          <span className="material-icons text-4xl dark:text-app-color-100">
+            {iconName}
+          </span>
 
-          <h3 className="mt-4 text-xl font-bold ">{title}</h3>
+          <h3 className="mt-4 text-xl font-bold dark:text-app-color-100">
+            {title}
+          </h3>
 
-          <p className="mt-2 text-sm">{desc}</p>
+          <p className="mt-2 text-sm dark:text-app-color-100">{desc}</p>
 
           <div className="flex justify-between mt-9 ">
             <div>
-              <span className="material-icons-outlined uppercase border rounded-xl py-3 px-4 text-app-color-400">
+              <span className="material-icons-outlined uppercase border border-2 dark:border-app-color-700 rounded-xl py-3 px-4 text-app-color-400 dark:text-app-color-100 hover:bg-app-color-500 hover:bg-opacity-10 dark:hover:bg-app-color-200 dark:hover:bg-opacity-5 transition duration-200">
                 {type}
               </span>
             </div>
@@ -100,7 +104,7 @@ export default function FeatureCard({
             <div className="flex items-center gap-5">
               <button
                 type="button"
-                className="material-icons cursor-pointer text-red-500 disabled:text-opacity-20"
+                className="material-icons cursor-pointer text-red-600 disabled:text-opacity-20"
                 onClick={handleDownVote}
                 disabled={!canVote.no ? true : false}
               >
@@ -119,7 +123,7 @@ export default function FeatureCard({
               </span>
               <button
                 type="button"
-                className={`text-green-500 material-icons cursor-pointer disabled:text-opacity-20
+                className={`text-green-600 material-icons cursor-pointer disabled:text-opacity-20
                 }`}
                 onClick={handleUpVote}
                 disabled={!canVote.yes ? true : false}
