@@ -6,6 +6,8 @@ import FeatureSection from "./layout/FeatureSection";
 import "./index.css";
 import LogoBanner from "./components/LogoBanner";
 import SectionTitle from "./components/SectionTitle";
+import LongPane from "./components/LongPane";
+import APIDox from "./components/APIDox";
 
 function App() {
   const [isDark, setDark] = useState<boolean>(true);
@@ -17,16 +19,22 @@ function App() {
     "to-app-color-900",
   ];
   useEffect(() => {
+    window.history.scrollRestoration = "manual";
+
+    // API calls to fetch data about features and votes GOES HERE
+  }, []);
+  useEffect(() => {
     isDark
       ? document.body.classList.add(...darkModeBGClasses)
       : document.body.classList.remove(...darkModeBGClasses);
   }, [isDark]);
   return (
     <div className={`App ${isDark ? "dark" : "light"}`}>
+      {/* <APIDox /> */}
       <LogoBanner />
       <Navbar darkMode={isDark} darkModeHandler={setDark} />
       {/* <FeatureSection> */}
-      <SectionTitle title="Features" />
+      <SectionTitle title="Features" id="features-section" />
       <FeatureSection>
         <FeatureCard
           title="Audio Unit Hosting"
@@ -50,7 +58,7 @@ function App() {
           votes={242}
         />
       </FeatureSection>
-      <SectionTitle title="Coming Soon" />
+      <SectionTitle title="Coming Soon" id="coming-soon" />
       <FeatureSection>
         <FeatureCard
           title="Audio Unit Hosting"
@@ -74,6 +82,7 @@ function App() {
           votes={242}
         />
       </FeatureSection>
+      {/* <LongPane /> */}
       <Pricing />
       {/* </FeatureSection> */}
     </div>

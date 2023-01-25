@@ -1,44 +1,67 @@
 import { createContext, Dispatch, SetStateAction, useState } from "react";
-
+import { useLocation } from "react-router-dom";
 interface Props {
   darkMode: boolean;
   darkModeHandler: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function Navbar({ darkMode, darkModeHandler }: Props) {
+  // const location = useLocation();
+  // console.log(location);
+
+  const [navOpen, setNavOpen] = useState<boolean>(false);
+
+  const scrollToPlans = () => {
+    document
+      .querySelector("#plans")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  const scrollToFeatures = () => {
+    document
+      .querySelector("#features-section")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   const swapDark = () => {
     darkModeHandler((prev) => !prev);
+  };
+  const scrollToTop = () => {
+    window.location.pathname === "/"
+      ? window.scrollTo({ top: 0, behavior: "smooth" })
+      : (window.location.href = "/");
+  };
+
+  const toggleNav = () => {
+    setNavOpen((prev) => !prev);
   };
   return (
     <>
       {/* <pre slot="react" style={{ marginBottom: "0px", marginTop: "0px" }} /> */}
 
-      <div className="navbar bg-slate-100 dark:bg-app-color-900 shadow-md sticky top-0 sm:my-10 z-10">
-        {/* <div className="flex-none">
-          <button className="btn btn-square btn-ghost">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="inline-block w-5 h-5 stroke-current"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
-        </div> */}
+      <div className="navbar bg-slate-100 dark:bg-app-color-900 shadow-md sm:sticky relative top-0 sm:my-10 sm:z-10 z-10">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">eCalenda</a>
+          <a
+            className="btn btn-ghost normal-case text-xl"
+            onClick={scrollToTop}
+          >
+            eCalenda
+          </a>
         </div>
 
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
+          <ul
+            className={`menu sm:menu-horizontal px-1 sm:relative sm:left-0 sm:top-0 sm:translate-x-0 sm:bg-transparent sm:w-0 absolute left-1/2 ${
+              navOpen ? "top-14" : "-top-96"
+            } -translate-x-1/2 transition-all duration-200 ease-in-out bg-app-color-800 rounded w-screen sm:block sm:px-1 z-10 shadow-xl sm:shadow-none`}
+          >
             <li>
-              <a>Updates</a>
+              <a onClick={scrollToFeatures}>Features</a>
+            </li>
+            <li>
+              <a onClick={scrollToPlans}>Plans</a>
+            </li>
+            <li>
+              <a href="/plans">Updates</a>
             </li>
             {/* <li tabIndex={0}>
               <a>
@@ -64,7 +87,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
             </li> */}
             <li>
               {/* <a>Item 3</a> */}
-              <label className="swap swap-rotate">
+              <label className="swap swap-rotate justify-start sm:justify-center">
                 <input type="checkbox" checked={darkMode} onChange={swapDark} />
                 <svg
                   className="swap-off fill-current w-6 h-6"
@@ -83,6 +106,24 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
               </label>
             </li>
           </ul>
+
+          <div className="flex-none sm:hidden">
+            <button className="btn btn-square btn-ghost" onClick={toggleNav}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block w-5 h-5 stroke-current"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
         {/* <div className="flex-none">
           <button className="btn btn-square btn-ghost">

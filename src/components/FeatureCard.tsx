@@ -32,12 +32,11 @@ export default function FeatureCard({
     no: true,
     yes: true,
   });
+
   const [voteCount, setVoteCount] = useState<number>(votes);
 
   const handleUpVote = () => {
     if (!voted) {
-      console.log("first");
-
       setVoteCount((prev) => prev + 1);
       setVoteCredit((prev) => ({ no: 2, yes: 0 }));
       setCanVote((prev) => ({ yes: false, no: true }));
@@ -47,10 +46,10 @@ export default function FeatureCard({
       if (voteCredit.yes === 2) {
         setVoteCredit((prev) => ({ no: 1, yes: 1 }));
         setVoteCount((prev) => prev + 1);
+        setCanVote((prev) => ({ yes: true, no: true }));
       } else if (voteCredit.yes === 1) {
         setVoteCredit((prev) => ({ no: 2, yes: 0 }));
         setVoteCount((prev) => prev + 1);
-      } else if (voteCredit.yes === 0) {
         setCanVote((prev) => ({ yes: false, no: true }));
       }
     }
@@ -66,10 +65,10 @@ export default function FeatureCard({
       if (voteCredit.no === 2) {
         setVoteCredit((prev) => ({ yes: 1, no: 1 }));
         setVoteCount((prev) => prev - 1);
+        setCanVote((prev) => ({ yes: true, no: true }));
       } else if (voteCredit.no === 1) {
         setVoteCredit((prev) => ({ yes: 2, no: 0 }));
         setVoteCount((prev) => prev - 1);
-      } else if (voteCredit.no === 0) {
         setCanVote((prev) => ({ yes: true, no: false }));
       }
     }
@@ -96,7 +95,7 @@ export default function FeatureCard({
 
           <div className="flex justify-between mt-9 ">
             <div>
-              <span className="material-icons-outlined uppercase border border-2 dark:border-app-color-700 rounded-xl py-3 px-4 text-app-color-400 dark:text-app-color-100 hover:bg-app-color-500 hover:bg-opacity-10 dark:hover:bg-app-color-200 dark:hover:bg-opacity-5 transition duration-200">
+              <span className="material-icons-outlined uppercase border-2 dark:border-app-color-700 rounded-xl py-3 px-4 text-app-color-400 dark:text-app-color-100 hover:bg-app-color-500 hover:bg-opacity-10 dark:hover:bg-app-color-200 dark:hover:bg-opacity-5 transition duration-200">
                 {type}
               </span>
             </div>
@@ -132,8 +131,14 @@ export default function FeatureCard({
               </button>
             </div>
 
-            <div className="badge badge-success text-xs absolute right-1/2 transform translate-x-1/2 -bottom-7 transition-all duration-200">
-              Already voted!
+            <div
+              className={`badge text-xs absolute left-1/2 transform -translate-x-1/2 transition-all duration-200 ${
+                canVote.no && canVote.yes
+                  ? "-bottom-10"
+                  : "bottom-2 badge-success"
+              }`}
+            >
+              Voted!
             </div>
           </div>
         </div>
