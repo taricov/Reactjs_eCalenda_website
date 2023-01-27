@@ -1,5 +1,4 @@
-import { createContext, Dispatch, SetStateAction, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Dispatch, SetStateAction, useState } from "react";
 interface Props {
   darkMode: boolean;
   darkModeHandler: Dispatch<SetStateAction<boolean>>;
