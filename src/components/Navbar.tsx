@@ -49,7 +49,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
 
         <div className="flex-none">
           <ul
-            className={`menu sm:menu-horizontal px-1 sm:relative sm:left-0 sm:top-0 sm:translate-x-0 sm:bg-transparent sm:w-0 absolute left-1/2 ${
+            className={`menu sm:menu-horizontal px-1 sm:relative sm:left-0 sm:top-0 sm:translate-x-0 sm:bg-transparent sm:w-0 space-x-1 absolute left-1/2 ${
               navOpen ? "top-14" : "-top-96"
             } -translate-x-1/2 transition-all duration-200 ease-in-out bg-app-color-800 rounded w-screen sm:block sm:px-1 z-10 shadow-xl sm:shadow-none`}
           >

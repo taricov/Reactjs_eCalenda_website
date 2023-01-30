@@ -1,15 +1,15 @@
 export default function PageContacts() {
   return (
     <>
-      <section className="p-6 dark:text-gray-100">
-        <form className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow dark:bg-gray-900 ng-untouched ng-pristine ng-valid">
-          <h2 className="w-full text-3xl font-bold leading-tight">
+      <section className="my-20 text-app-color-700 dark:text-app-color-50 w-full mx-auto">
+        <form className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md">
+          <h2 className="w-full mx-auto text-3xl font-bold text-center leading-tight">
             Contact us
           </h2>
           <div>
             <label
-              // for="name"
-              className="block mb-1 ml-1"
+              htmlFor="name"
+              className="block text-sm font-medium text-app-color-700 dark:text-app-color-100 mb-2"
             >
               Name
             </label>
@@ -17,13 +17,13 @@ export default function PageContacts() {
               id="name"
               type="text"
               placeholder="Your name"
-              className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800"
+              className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
             />
           </div>
           <div>
             <label
-              // for="email"
-              className="block mb-1 ml-1"
+              htmlFor="email"
+              className="block text-sm font-medium text-app-color-700 dark:text-app-color-100 mb-2"
             >
               Email
             </label>
@@ -31,29 +31,28 @@ export default function PageContacts() {
               id="email"
               type="email"
               placeholder="Your email"
-              className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800"
+              className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
             />
           </div>
           <div>
             <label
-              // for="message"
-              className="block mb-1 ml-1"
+              htmlFor="message"
+              className="block text-sm font-medium text-app-color-700 dark:text-app-color-100 mb-2"
             >
               Message
             </label>
             <textarea
               id="message"
-              // type="text"
               placeholder="Message..."
-              className="block w-full p-2 rounded autoexpand focus:outline-none focus:ring focus:ring-opacity-25 focus:ring-violet-400 dark:bg-gray-800"
-              // spellcheck="false"
+              className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
+              spellCheck={false}
               style={{ height: "165px;" }}
             ></textarea>
           </div>
           <div>
             <button
               type="submit"
-              className="w-full px-4 py-2 font-bold rounded shadow focus:outline-none focus:ring hover:ring focus:ring-opacity-50 dark:bg-violet-400 focus:ring-violet-400 hover:ring-violet-400 dark:text-gray-900"
+              className="text-app-color-100 bg-app-color-500 hover:bg-app-color-600 transition duration-200 focus:ring-4 focus:outline-none focus:ring-app-color-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-app-color-100 dark:bg-opacity-10 dark:hover:bg-opacity-20 dark:focus:ring-app-color-900"
             >
               Send
             </button>
