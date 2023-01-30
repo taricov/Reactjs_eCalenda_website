@@ -49,8 +49,8 @@ const featuresObj = {
 const Feature = ({ ...props }) => {
   return (
     <>
-      <div className="group">
-        <span className="bg-gray-800 group-hover:bg-app-color-900 group-hover:text-app-color-200 transition-all duration-200 text-app-color-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center indent-10">
+      <div className="group flex">
+        <div className="mt-1 px-[1px] bg-gray-800 group-hover:bg-app-color-900 group-hover:text-app-color-200 transition-all duration-200 text-app-color-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
           <svg
             fill="none"
             stroke="currentColor"
@@ -62,8 +62,8 @@ const Feature = ({ ...props }) => {
           >
             <path d="M20 6L9 17l-5-5"></path>
           </svg>
-        </span>
-        {props.title}
+        </div>
+        <div className="">{props.title}</div>
       </div>
     </>
   );

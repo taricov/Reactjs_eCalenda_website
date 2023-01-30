@@ -90,6 +90,8 @@ function App() {
         </Routes>
       </Router>
       <AppFooter />
+
+      {/* //TODO: Features and Testimonial light Theme */}
       {/* The rest of your app goes here */}
       {/* <RouterProvider router={router} /> */}
     </div>
