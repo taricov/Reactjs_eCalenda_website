@@ -8,7 +8,7 @@ export default function PageSignIn() {
         <form className="space-y-6">
           <div className="space-y-1 text-sm">
             <label
-              // for="username"
+              htmlFor="username"
               className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
             >
               Username
@@ -23,7 +23,7 @@ export default function PageSignIn() {
           </div>
           <div className="space-y-1 text-sm">
             <label
-              // for="password"
+              htmlFor="password"
               className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
             >
               Password

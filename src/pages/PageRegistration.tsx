@@ -75,7 +75,7 @@ export default function PageRegistration() {
             <div className="space-y-4">
               <div className="space-y-2">
                 <label
-                  // for="email"
+                  htmlFor="email"
                   className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   Email address
@@ -91,7 +91,7 @@ export default function PageRegistration() {
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <label
-                    // for="password"
+                    htmlFor="password"
                     className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                   >
                     Password
@@ -109,7 +109,7 @@ export default function PageRegistration() {
             <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
               <div className="col-span-full sm:col-span-3">
                 <label
-                  // for="firstname"
+                  htmlFor="firstname"
                   className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   First name
@@ -123,7 +123,7 @@ export default function PageRegistration() {
               </div>
               <div className="col-span-full sm:col-span-3">
                 <label
-                  // for="lastname"
+                  htmlFor="lastname"
                   className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   Last name
@@ -137,7 +137,7 @@ export default function PageRegistration() {
               </div>
               <div className="col-span-full sm:col-span-3">
                 <label
-                  // for="email"
+                  htmlFor="email"
                   className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   Email
@@ -151,7 +151,7 @@ export default function PageRegistration() {
               </div>
               <div className="col-span-full">
                 <label
-                  // for="address"
+                  htmlFor="address"
                   className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   Address
@@ -165,7 +165,7 @@ export default function PageRegistration() {
               </div>
               <div className="col-span-full sm:col-span-2">
                 <label
-                  // for="city"
+                  htmlFor="city"
                   className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   City
@@ -179,7 +179,7 @@ export default function PageRegistration() {
               </div>
               <div className="col-span-full sm:col-span-2">
                 <label
-                  // for="state"
+                  htmlFor="state"
                   className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   State / Province
@@ -193,7 +193,7 @@ export default function PageRegistration() {
               </div>
               <div className="col-span-full sm:col-span-2">
                 <label
-                  // for="zip"
+                  htmlFor="zip"
                   className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   ZIP / Postal

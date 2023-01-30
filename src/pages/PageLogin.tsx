@@ -17,7 +17,7 @@ export default function PageLogin() {
         <form>
           <div className="mb-6">
             <label
-              // for="email"
+              htmlFor="email"
               className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
             >
               Your email
@@ -32,7 +32,7 @@ export default function PageLogin() {
           </div>
           <div className="mb-6">
             <label
-              // for="password"
+              htmlFor="password"
               className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
             >
               Your password
@@ -54,7 +54,7 @@ export default function PageLogin() {
               />
             </div>
             <label
-              // for="remember"
+              htmlFor="remember"
               className="ml-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
             >
               Remember me

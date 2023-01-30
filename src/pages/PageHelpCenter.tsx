@@ -148,7 +148,7 @@ export const Faq2 = () => {
             If you still have questions, Please{" "}
             <a
               href="/contacts"
-              className="underline hover:text-app-color-300 transition-all duration-200"
+              className="underline hover:text-app-color-400 dark:hover:text-app-color-300 transition-all duration-200"
             >
               Contact Us
             </a>
