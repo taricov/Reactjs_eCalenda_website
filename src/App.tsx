@@ -92,64 +92,7 @@ function App() {
       <AppFooter />
 
       {/* //TODO: Features and Testimonial light Theme */}
-      {/* The rest of your app goes here */}
-      {/* <RouterProvider router={router} /> */}
     </div>
-    // <div className={`App ${isDark ? "dark" : "light"}`}>
-    //   <LogoBanner />
-    //   <Navbar darkMode={isDark} darkModeHandler={setDark} />
-    //   <SectionTitle title="Features" id="features-section" />
-    //   <FeatureSection>
-    //     <FeatureCard
-    //       title="Audio Unit Hosting"
-    //       desc="Host your favourite Audio Units from your Library, chain them together with eqMac effects! No more setup hassles."
-    //       iconName={"dynamic_feed"}
-    //       type="pro"
-    //       votes={242}
-    //     />
-    //     <FeatureCard
-    //       title="Audio Unit Hosting"
-    //       desc="Host your favourite Audio Units from your Library, chain them together with eqMac effects! No more setup hassles."
-    //       iconName={"dynamic_feed"}
-    //       type="startup"
-    //       votes={-2}
-    //     />
-    //     <FeatureCard
-    //       title="Audio Unit Hosting"
-    //       desc="Host your favourite Audio Units from your Library, chain them together with eqMac effects! No more setup hassles."
-    //       iconName={"dynamic_feed"}
-    //       type="free"
-    //       votes={242}
-    //     />
-    //   </FeatureSection>
-    //   <SectionTitle title="Coming Soon" id="coming-soon" />
-    //   <FeatureSection>
-    //     <FeatureCard
-    //       title="Audio Unit Hosting"
-    //       desc="Host your favourite Audio Units from your Library, chain them together with eqMac effects! No more setup hassles."
-    //       iconName={"dynamic_feed"}
-    //       type="pro"
-    //       votes={242}
-    //     />
-    //     <FeatureCard
-    //       title="Audio Unit Hosting"
-    //       desc="Host your favourite Audio Units from your Library, chain them together with eqMac effects! No more setup hassles."
-    //       iconName={"dynamic_feed"}
-    //       type="startup"
-    //       votes={-2}
-    //     />
-    //     <FeatureCard
-    //       title="Audio Unit Hosting"
-    //       desc="Host your favourite Audio Units from your Library, chain them together with eqMac effects! No more setup hassles."
-    //       iconName={"dynamic_feed"}
-    //       type="free"
-    //       votes={242}
-    //     />
-    //   </FeatureSection>
-    //   <Pricing />
-    // {/* <LongPane /> */}
-    // {/* </FeatureSection> */}
-    // </div>
   );
 }
 

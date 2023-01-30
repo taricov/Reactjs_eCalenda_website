@@ -221,7 +221,6 @@ export default function PageRegistration() {
 }
 
 //TODO: passoward confirmation
-//TODO: password strength meter
-//FIXME: for attr for inputs in react
+//TODO: password strength meter [will make it ourselves]
 //TODO Arrange fields
 //TODO add terms and conditions
