@@ -82,20 +82,22 @@ export default function FeatureCard({
           4.3
         </span>
 
-        <div className=" text-gray-500 sm:pr-4">
-          <span className="material-icons text-4xl dark:text-app-color-100">
+        <div className="text-app-color-600 sm:pr-4">
+          <span className="material-icons text-4xl dark:text-app-color-100 ">
             {iconName}
           </span>
 
-          <h3 className="mt-4 text-xl font-bold dark:text-app-color-100">
+          <h3 className="mt-4 text-xl font-bold dark:text-app-color-100 text-app-color-600">
             {title}
           </h3>
 
-          <p className="mt-2 text-sm dark:text-app-color-100">{desc}</p>
+          <p className="mt-2 text-sm dark:text-app-color-100 text-app-color-800">
+            {desc}
+          </p>
 
-          <div className="flex justify-between mt-9 ">
+          <div className="flex justify-between mt-9">
             <div>
-              <span className="material-icons-outlined uppercase border-2 dark:border-app-color-700 rounded-xl py-3 px-4 text-app-color-400 dark:text-app-color-100 hover:bg-app-color-500 hover:bg-opacity-10 dark:hover:bg-app-color-200 dark:hover:bg-opacity-5 transition duration-200">
+              <span className="material-icons-outlined uppercase border-2 dark:border-app-color-700 rounded-xl py-3 px-4 text-app-color-700 bg-app-color-200 dark:bg-opacity-10 dark:text-app-color-200 hover:border-app-color-300  dark:hover:bg-app-color-200 dark:hover:bg-opacity-5 transition duration-200">
                 {type}
               </span>
             </div>

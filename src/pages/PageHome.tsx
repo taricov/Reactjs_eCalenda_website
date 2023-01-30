@@ -4,13 +4,15 @@ import Pricing from "../components/Pricing";
 import SectionTitle from "../components/SectionTitle";
 import AppHeader from "../layout/AppHeader";
 import FeatureSection from "../layout/FeatureSection";
+import HeroSection from "./HeroSection";
 
 export default function PageHome() {
   return (
     <>
       {/* <AppHeader /> */}
       <>
-        <SectionTitle title="Features" id="features-section" />
+        <HeroSection />
+        <SectionTitle dataGhost="" title="Features" id="features-section" />
         <FeatureSection>
           <FeatureCard
             title="Audio Unit Hosting"
@@ -34,7 +36,7 @@ export default function PageHome() {
             votes={242}
           />
         </FeatureSection>
-        <SectionTitle title="Coming Soon" id="coming-soon" />
+        <SectionTitle dataGhost="SOON" title="Coming Soon" id="coming-soon" />
         <FeatureSection>
           <FeatureCard
             title="Audio Unit Hosting"

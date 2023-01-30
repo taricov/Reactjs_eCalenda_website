@@ -3,11 +3,21 @@ module.exports = {
   darkMode: "class",
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
+
   ],
   theme: {
     extend: {
-      colors: {
+      opacity: {
+        "1": ".01",
+        "2": ".04"
+      },
+      ringWidth: {
+        "x": "12px"
+      },
 
+      colors: {
+        "light-th": "bg-gradient-to-r from-app-color-200",
         'app-color': {
           '50': '#f8f7fe',
           '100': '#f1f0fe',
@@ -23,5 +33,5 @@ module.exports = {
       }
     },
   },
-  plugins: [require("daisyui", "@tailwindcss/forms")],
+  plugins: [require("daisyui", "@tailwindcss/forms", "flowbite/plugin")],
 }

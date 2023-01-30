@@ -37,10 +37,10 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
     <>
       {/* <pre slot="react" style={{ marginBottom: "0px", marginTop: "0px" }} /> */}
 
-      <div className="navbar bg-slate-100 dark:bg-app-color-900 shadow-md sm:sticky relative top-0 sm:my-10 sm:z-10 z-10">
+      <div className="navbar bg-app-color-100 dark:bg-app-color-900 shadow-md sm:sticky relative top-0 sm:my-10 sm:z-10 z-10">
         <div className="flex-1">
           <a
-            className="btn btn-ghost normal-case text-xl"
+            className="btn btn-ghost normal-case text-xl text-app-color-500 dark:text-app-color-100"
             onClick={scrollToTop}
           >
             eCalenda
@@ -54,13 +54,36 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
             } -translate-x-1/2 transition-all duration-200 ease-in-out bg-app-color-800 rounded w-screen sm:block sm:px-1 z-10 shadow-xl sm:shadow-none`}
           >
             <li>
-              <a onClick={scrollToFeatures}>Features</a>
+              <a
+                onClick={scrollToFeatures}
+                className="text-app-color-500 dark:text-app-color-100"
+              >
+                Features
+              </a>
             </li>
             <li>
-              <a onClick={scrollToPlans}>Plans</a>
+              <a
+                onClick={scrollToPlans}
+                className="text-app-color-500 dark:text-app-color-100"
+              >
+                Plans
+              </a>
             </li>
             <li>
-              <a href="/plans">Updates</a>
+              <a
+                href="/latest-updates"
+                className="text-app-color-500 dark:text-app-color-100"
+              >
+                Updates
+              </a>
+            </li>
+            <li>
+              <a
+                className="bg-app-color-500 dark:bg-app-color-300 dark:bg-opacity-50 text-app-color-100 dark:text-app-color-100 hover:dark:bg-opacity-10 hover:bg-opacity-25 hover:text-app-color-100 transition duration-200"
+                href="/login"
+              >
+                Sign In
+              </a>
             </li>
             {/* <li tabIndex={0}>
               <a>

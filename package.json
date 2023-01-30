@@ -14,9 +14,12 @@
     "@tanstack/react-query": "^4.23.0",
     "axios": "^1.2.4",
     "daisyui": "^2.47.0",
+    "flowbite": "^1.6.3",
+    "flowbite-react": "^0.3.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.7.0"
+    "react-router-dom": "^6.7.0",
+    "react-social-login": "^3.4.16"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
