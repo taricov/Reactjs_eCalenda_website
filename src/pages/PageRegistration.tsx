@@ -1,4 +1,79 @@
+import { ChangeEvent, useState } from "react";
+import AppAutoComplete from "../components/AppAutoComplete";
+
 export default function PageRegistration() {
+  const [lengthChecked, setLengthChecked] = useState<boolean>(false);
+  const [upperChecked, setUpperChecked] = useState<boolean>(false);
+  const [symbolChecked, setSymbolChecked] = useState<boolean>(false);
+  const [numberChecked, setNumberChecked] = useState<boolean>(false);
+  const [lowerChecked, setLowerChecked] = useState<boolean>(false);
+  const [passwordMatched, setPasswordMatched] = useState<boolean>(false);
+  const [errorChars, setErrorChars] = useState<boolean>(false);
+  const [basePassword, setBasePassword] = useState<string>("");
+
+  const [termsAccepted, SetTermsAccepted] = useState<boolean>(false);
+  const rules = {
+    lengthRule: {
+      checker: lengthChecked,
+      label: "at least 8 characters",
+    },
+    numberRule: {
+      checker: numberChecked,
+      label: "at least 1 number",
+    },
+    lowerRule: {
+      checker: lowerChecked,
+      label: "at least 1 lowercase character",
+    },
+    upperRule: {
+      checker: upperChecked,
+      label: "at least 1 uppercase character",
+    },
+    symbolRule: {
+      checker: symbolChecked,
+      label: "at least 1 symbol",
+    },
+  };
+
+  const passwordMeter = (e: ChangeEvent<HTMLInputElement>) => {
+    let password = e.target.value;
+    setBasePassword(password);
+    setLengthChecked(false);
+    setSymbolChecked(false);
+    setNumberChecked(false);
+    setUpperChecked(false);
+    setLowerChecked(false);
+    setErrorChars(false);
+    if (/.*[a-z].*/.test(password)) {
+      setLowerChecked((prev) => !prev);
+    }
+    if (/\d/.test(password)) {
+      setNumberChecked((prev) => !prev);
+    }
+    if (password.length >= 8) {
+      setLengthChecked((prev) => !prev);
+    }
+    if (/\W/.test(password)) {
+      setSymbolChecked((prev) => !prev);
+    }
+    if (/[A-Z]/.test(password)) {
+      setUpperChecked((prev) => !prev);
+    }
+    if (/\s/.test(password)) {
+      setErrorChars((prev) => !prev);
+    }
+  };
+
+  const passwordMatchChecker = (e: ChangeEvent<HTMLInputElement>) => {
+    setPasswordMatched(false);
+    const confirmedPassword = e.target.value;
+    console.log(confirmedPassword, passwordMatched, "base " + basePassword);
+    if (confirmedPassword.length === 0) {
+      setPasswordMatched(false);
+    } else if (confirmedPassword === basePassword) {
+      setPasswordMatched((prev) => !prev);
+    }
+  };
   return (
     <>
       <div className="w-full my-20">
@@ -72,45 +147,14 @@ export default function PageRegistration() {
             action=""
             className="space-y-8 ng-untouched ng-pristine ng-valid"
           >
-            <div className="space-y-4">
-              <div className="space-y-2">
-                <label
-                  htmlFor="email"
-                  className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
-                >
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="username@gmail.com"
-                  className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg  focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
-                />
-              </div>
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <label
-                    htmlFor="password"
-                    className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
-                  >
-                    Password
-                  </label>
-                </div>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Password"
-                  className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
-                />
-              </div>
-            </div>
+            {/* <div className="space-y-4"> */}
+
+            {/* </div> */}
             <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
               <div className="col-span-full sm:col-span-3">
                 <label
                   htmlFor="firstname"
-                  className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                  className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   First name
                 </label>
@@ -124,7 +168,7 @@ export default function PageRegistration() {
               <div className="col-span-full sm:col-span-3">
                 <label
                   htmlFor="lastname"
-                  className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                  className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   Last name
                 </label>
@@ -135,24 +179,53 @@ export default function PageRegistration() {
                   className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
                 />
               </div>
-              <div className="col-span-full sm:col-span-3">
+              <div className="col-span-full">
                 <label
-                  htmlFor="email"
-                  className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                  htmlFor="company"
+                  className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
-                  Email
+                  Company Name
                 </label>
                 <input
-                  id="email"
-                  type="email"
-                  placeholder="Email"
+                  id="company"
+                  type="text"
+                  placeholder="Company Name"
                   className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
                 />
               </div>
               <div className="col-span-full">
                 <label
+                  htmlFor="subdomain"
+                  className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                >
+                  <span>Your Subdomain</span>
+                </label>
+                <label className="input-group" htmlFor="subdomain">
+                  <span className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200 label-text">
+                    https://
+                  </span>
+                  <input
+                    id="subdomain"
+                    type="text"
+                    placeholder="yoursubdomain.ecalenda.com"
+                    className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
+                  />
+                </label>
+              </div>
+              <div className="col-span-full sm:col-span-1/2">
+                <label
+                  htmlFor="country"
+                  className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                >
+                  Your Country
+                </label>
+
+                <AppAutoComplete />
+              </div>
+              <div className="col-span-full sm:col-span-2">
+                <label
                   htmlFor="address"
-                  className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                  className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   Address
                 </label>
@@ -166,7 +239,7 @@ export default function PageRegistration() {
               <div className="col-span-full sm:col-span-2">
                 <label
                   htmlFor="city"
-                  className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                  className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   City
                 </label>
@@ -180,7 +253,7 @@ export default function PageRegistration() {
               <div className="col-span-full sm:col-span-2">
                 <label
                   htmlFor="state"
-                  className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                  className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   State / Province
                 </label>
@@ -194,7 +267,7 @@ export default function PageRegistration() {
               <div className="col-span-full sm:col-span-2">
                 <label
                   htmlFor="zip"
-                  className="block mb-0 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                  className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
                 >
                   ZIP / Postal
                 </label>
@@ -205,6 +278,165 @@ export default function PageRegistration() {
                   className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
                 />
               </div>
+              <div className="col-span-full">
+                <label
+                  htmlFor="email"
+                  className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                >
+                  Email address
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="username@gmail.com"
+                  className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg  focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
+                />
+              </div>
+              <div className="col-span-full">
+                <div className="flex justify-between">
+                  <label
+                    htmlFor="password"
+                    className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
+                  >
+                    Password
+                  </label>
+                </div>
+                <div className="relative">
+                  <span
+                    className={`absolute right-4 top-2  ${
+                      numberChecked &&
+                      lengthChecked &&
+                      symbolChecked &&
+                      lowerChecked &&
+                      upperChecked &&
+                      !errorChars
+                        ? "opacity-100 text-green-500"
+                        : "opacity-50 text-gray-500"
+                    }`}
+                  >
+                    ✓
+                  </span>
+                  <input
+                    onChange={passwordMeter}
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                    className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
+                  />
+                </div>
+              </div>
+              <div className="col-span-full">
+                <div className="flex justify-between">
+                  <label
+                    htmlFor="confirm_password"
+                    className={`block mb-2 text-sm font-medium  ${
+                      numberChecked &&
+                      lengthChecked &&
+                      symbolChecked &&
+                      lowerChecked &&
+                      upperChecked &&
+                      !errorChars
+                        ? "text-app-color-700 dark:text-app-color-100"
+                        : "text-gray-400"
+                    }`}
+                  >
+                    Confirm Password
+                  </label>
+                </div>
+                <div className="relative">
+                  <span
+                    className={`absolute right-4 top-2  ${
+                      passwordMatched
+                        ? "opacity-100 text-green-500"
+                        : "opacity-50 text-gray-500"
+                    }`}
+                  >
+                    ✓
+                  </span>
+                  <input
+                    disabled={
+                      numberChecked &&
+                      lengthChecked &&
+                      symbolChecked &&
+                      lowerChecked &&
+                      upperChecked &&
+                      !errorChars
+                        ? false
+                        : true
+                    }
+                    onChange={passwordMatchChecker}
+                    type="password"
+                    name="confirm password"
+                    id="confirm_password"
+                    placeholder="Confirm Password"
+                    className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
+                  />
+                </div>
+                <div className="flex flex-wrap w-full">
+                  {Object.entries(rules).map((rule) => {
+                    return (
+                      <>
+                        <div
+                          className="w-1/2"
+                          data-length-checked={rule[1].checker}
+                        >
+                          <span
+                            className={`text-gray-600 text-bold text-xs ${
+                              rule[1].checker
+                                ? "opacity-100 dark:text-green-500 text-green-600"
+                                : "opacity-30 dark:opacity-50"
+                            }`}
+                          >
+                            {rule[1].checker ? "✓" : "—"}{" "}
+                          </span>
+                          <span
+                            className={`capitalize text-[10px] ${
+                              rule[1].checker
+                                ? "opacity-100 dark:text-green-500 text-green-600"
+                                : "opacity-90 dark:opacity-50"
+                            }`}
+                          >
+                            {rule[1].label}
+                          </span>
+                        </div>
+                      </>
+                    );
+                  })}
+                </div>
+
+                {errorChars ? (
+                  <span className="text-red-600 capitalize text-[10px]">
+                    x unallowed characters
+                  </span>
+                ) : null}
+              </div>
+            </div>
+            <div className="flex items-center gap-2 text-app-color-200">
+              <input
+                onChange={() => SetTermsAccepted((prev) => !prev)}
+                id="terms"
+                type="checkbox"
+                checked={termsAccepted}
+                className="checkbox checkbox-xs rounded-sm   bg-app-color-300 bg-opacity-30 checked:bg-app-color-500 dark:bg-opacity-2 dark:bg-app-color-100"
+              />
+              <label htmlFor="terms" className="text-sm text-app-color-500">
+                Accept{" "}
+                <a
+                  href="#"
+                  className="transition duration-200 text-app-color-400 dark:text-app-color-500 hover:text-app-color-700 dark:hover:text-app-color-400"
+                >
+                  Term & Conditions
+                </a>{" "}
+                and{" "}
+                <a
+                  href="#"
+                  className="transition duration-200 text-app-color-400 dark:text-app-color-500 hover:text-app-color-700 dark:hover:text-app-color-400"
+                >
+                  Privacy Policy
+                </a>
+              </label>
             </div>
 
             <button
@@ -219,8 +451,3 @@ export default function PageRegistration() {
     </>
   );
 }
-
-//TODO: passoward confirmation
-//TODO: password strength meter [will make it ourselves]
-//TODO Arrange fields
-//TODO add terms and conditions

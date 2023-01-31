@@ -90,8 +90,6 @@ function App() {
         </Routes>
       </Router>
       <AppFooter />
-
-      {/* //TODO: Features and Testimonial light Theme */}
     </div>
   );
 }

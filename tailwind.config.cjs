@@ -8,6 +8,8 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundColor: ['checked'],
+
       opacity: {
         "1": ".01",
         "2": ".04"

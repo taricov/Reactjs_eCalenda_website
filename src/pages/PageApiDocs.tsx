@@ -46,7 +46,21 @@ export default function PageApiDocs() {
           </ul>
         </div>
         <div className="flex justify-center border items-center grow">
-          <div> something</div>
+          <div className="h-full w-full p-5 flex-col justify-center items-center">
+            {" "}
+            <div className="bg-white bg-opacity-2">something</div>
+            <div className="mockup-code w-3/4 mx-auto text-sm bg-gradient-to-r from-app-color-900">
+              <pre data-prefix="1">
+                <code>npm i daisyui</code>
+              </pre>
+              <pre data-prefix="2">
+                <code>installing...</code>
+              </pre>
+              <pre data-prefix="3" className="bg-success text-warning-content">
+                <code>Error!</code>
+              </pre>
+            </div>
+          </div>
         </div>
       </div>
     </>

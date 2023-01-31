@@ -50,7 +50,7 @@ const Feature = ({ ...props }) => {
   return (
     <>
       <div className="group flex">
-        <div className="mt-1 px-[1px] bg-gray-800 group-hover:bg-app-color-900 group-hover:text-app-color-200 transition-all duration-200 text-app-color-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+        <div className="mt-1 px-[1px] bg-app-color-200 dark:bg-gray-800 group-hover:bg-app-color-900 group-hover:text-app-color-200 transition-all duration-200 dark:text-app-color-500 text-app-color-700 w-[15px] h-[15px] mr-2 rounded-full inline-flex items-center justify-center">
           <svg
             fill="none"
             stroke="currentColor"
@@ -72,12 +72,14 @@ const Feature = ({ ...props }) => {
 export default function PageTerms() {
   return (
     <>
-      <section className="text-app-color-200 body-font">
+      <section className="text-app-color-700 dark:text-app-color-200 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">
-              <span className="text-app-color-600 text-4xl">Features</span>
-              &nbsp; We Provide Right Away!
+            <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-app-color-700 dark:text-app-color-50 mb-4">
+              <span className="text-app-color-500 dark:text-app-color-600 text-4xl">
+                Features
+              </span>{" "}
+              We Provide Right Away!
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
               eCalenda is a business-centric tooling to enable business manage
@@ -92,7 +94,7 @@ export default function PageTerms() {
                   <div className="md:w-1/4 flex-col mx-auto">
                     <h2
                       key={cat[0]}
-                      className="font-bold tracking-widest text-app-color-100 mb-4"
+                      className="font-bold tracking-widest text-app-color-700 dark:text-app-color-100 mb-4"
                     >
                       {cat[0]}
                     </h2>
