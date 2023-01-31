@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import AppAutoComplete from "../components/AppAutoComplete";
 
 export default function PageRegistration() {
@@ -10,6 +10,7 @@ export default function PageRegistration() {
   const [passwordMatched, setPasswordMatched] = useState<boolean>(false);
   const [errorChars, setErrorChars] = useState<boolean>(false);
   const [basePassword, setBasePassword] = useState<string>("");
+  const [ipData, setIpData] = useState<Object>({});
 
   const [termsAccepted, SetTermsAccepted] = useState<boolean>(false);
   const rules = {
@@ -34,6 +35,18 @@ export default function PageRegistration() {
       label: "at least 1 symbol",
     },
   };
+
+  const getIpAddress = () => {
+    fetch("http://www.geoplugin.net/json.gp")
+      .then((data) => data.json())
+      .then((res) => setIpData(res));
+    // .then(() => console.log(ipData));
+  };
+
+  useEffect(() => {
+    getIpAddress();
+    console.log(ipData);
+  }, []);
 
   const passwordMeter = (e: ChangeEvent<HTMLInputElement>) => {
     let password = e.target.value;
@@ -67,7 +80,7 @@ export default function PageRegistration() {
   const passwordMatchChecker = (e: ChangeEvent<HTMLInputElement>) => {
     setPasswordMatched(false);
     const confirmedPassword = e.target.value;
-    console.log(confirmedPassword, passwordMatched, "base " + basePassword);
+    // console.log(confirmedPassword, passwordMatched, "base " + basePassword);
     if (confirmedPassword.length === 0) {
       setPasswordMatched(false);
     } else if (confirmedPassword === basePassword) {
@@ -376,9 +389,12 @@ export default function PageRegistration() {
                 </div>
                 <div className="flex flex-wrap w-full">
                   {Object.entries(rules).map((rule) => {
+                    // console.log("key", rule[0]);
+
                     return (
                       <>
                         <div
+                          key={rule[0]}
                           className="w-1/2"
                           data-length-checked={rule[1].checker}
                         >
