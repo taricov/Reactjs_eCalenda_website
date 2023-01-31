@@ -222,7 +222,7 @@ export default function PageRegistration() {
 
                 <AppAutoComplete />
               </div>
-              <div className="col-span-full sm:col-span-2">
+              <div className="col-span-full sm:col-span-3">
                 <label
                   htmlFor="address"
                   className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
@@ -236,7 +236,7 @@ export default function PageRegistration() {
                   className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
                 />
               </div>
-              <div className="col-span-full sm:col-span-2">
+              <div className="col-span-full sm:col-span-3">
                 <label
                   htmlFor="city"
                   className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
@@ -250,7 +250,7 @@ export default function PageRegistration() {
                   className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
                 />
               </div>
-              <div className="col-span-full sm:col-span-2">
+              <div className="col-span-full sm:col-span-3">
                 <label
                   htmlFor="state"
                   className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
@@ -264,7 +264,7 @@ export default function PageRegistration() {
                   className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
                 />
               </div>
-              <div className="col-span-full sm:col-span-2">
+              <div className="col-span-full sm:col-span-3">
                 <label
                   htmlFor="zip"
                   className="block mb-2 text-sm font-medium text-app-color-700 dark:text-app-color-100"
@@ -421,7 +421,10 @@ export default function PageRegistration() {
                 checked={termsAccepted}
                 className="checkbox checkbox-xs rounded-sm   bg-app-color-300 bg-opacity-30 checked:bg-app-color-500 dark:bg-opacity-2 dark:bg-app-color-100"
               />
-              <label htmlFor="terms" className="text-sm text-app-color-500">
+              <label
+                htmlFor="terms"
+                className="text-sm text-app-color-500 dark:text-app-color-300"
+              >
                 Accept{" "}
                 <a
                   href="#"

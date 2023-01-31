@@ -21,6 +21,7 @@ export default function PageSignIn() {
               className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg  focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder-opacity-5 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200"
             />
           </div>
+
           <div className="space-y-1 text-sm">
             <label
               htmlFor="password"
@@ -35,10 +36,27 @@ export default function PageSignIn() {
               placeholder="Password"
               className="bg-app-color-100 border border-app-color-300 text-app-color-800 text-sm rounded-lg  focus:border-app-color-600 block w-full p-2.5 dark:bg-app-color-100 dark:bg-opacity-5  dark:placeholder:text-opacity-50 placeholder:text-app-color-500 placeholder:text-opacity-50 dark:placeholder:text-app-color-200 dark:text-app-color-100 dark:focus:ring-app-color-700 dark:border-app-color-900 dark:focus:border-app-color-100 transition-all duration-200 outline-none"
             />
-            <div className="flex justify-end text-xs text-app-color-400 text-opacity-90 dark:text-app-color-300 hover:text-app-color-500 dark: dark:hover:text-app-color-100 trasition-all duration-200">
-              <a rel="noopener noreferrer" href="#">
-                Forgot Password?
-              </a>
+            <div className="pt-2 flex justify-between items-center">
+              <div className="flex items-center gap-2 text-app-color-200">
+                <input
+                  // onChange={() => SetTermsAccepted((prev) => !prev)}
+                  id="rememberme"
+                  type="checkbox"
+                  // checked={termsAccepted}
+                  className="checkbox checkbox-xs rounded-sm   bg-app-color-300 bg-opacity-30 checked:bg-app-color-500 dark:bg-opacity-2 dark:bg-app-color-100"
+                />
+                <label
+                  htmlFor="rememberme"
+                  className="text-sm text-app-color-500 dark:text-app-color-300"
+                >
+                  Remember me
+                </label>
+              </div>
+              <div className="flex justify-end text-xs text-app-color-400 text-opacity-90 dark:text-app-color-300 hover:text-app-color-500 dark: dark:hover:text-app-color-100 trasition-all duration-200">
+                <a rel="noopener noreferrer" href="#">
+                  Forgot Password?
+                </a>
+              </div>
             </div>
           </div>
           <button className="text-app-color-100 bg-app-color-500 hover:bg-app-color-600 transition duration-200 focus:ring-4 focus:outline-none focus:ring-app-color-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-app-color-100 dark:bg-opacity-10 dark:hover:bg-opacity-20 dark:focus:ring-app-color-900">
