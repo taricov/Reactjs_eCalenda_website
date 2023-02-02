@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import ScrollReveal from "scrollreveal";
 
 const featuresObj = {
-  "": [
+  someting: [
     "feature 1",
     "feature 2",
     "feature 3",
@@ -109,14 +109,14 @@ export default function PageTerms() {
               their indusry needs and satisfy various case scenarios.
             </p>
           </div>
-          <div className="flex flex-wrap w-full justify-center">
+          <div className="flex flex-wrap gap-10 px-10 w-3/4 mx-auto justify-center">
             {Object.entries(featuresObj).map((cat) => {
               return (
                 <>
                   <div className="md:w-1/4 flex-col mx-auto">
                     <h2
                       key={cat[0]}
-                      className="font-bold tracking-widest text-app-color-700 dark:text-app-color-100 mb-4"
+                      className="font-bold tracking-widest text-app-color-700 dark:text-app-color-100 mb-4 w-full"
                     >
                       {cat[0]}
                     </h2>

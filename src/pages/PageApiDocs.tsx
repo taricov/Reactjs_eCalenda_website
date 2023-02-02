@@ -38,14 +38,14 @@ export default function PageApiDocs() {
             API Docs
           </div>
           <ul className="flex flex-col py-4">
-            <MenuItem title="first item" scrollTo="" />
+            <MenuItem title="Introduction" scrollTo="" />
             <MenuItem title="first item" scrollTo="" />
             <MenuItem title="first item" scrollTo="" />
             <MenuItem title="first item" scrollTo="" />
             <MenuItem title="first item" scrollTo="" />
           </ul>
         </div>
-        <div className="flex justify-center border items-center grow">
+        <div className="flex justify-center items-center grow">
           <div className="h-full w-full p-5 flex-col justify-center items-center">
             {" "}
             <div className="bg-white bg-opacity-2">something</div>

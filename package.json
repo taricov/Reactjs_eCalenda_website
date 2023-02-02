@@ -18,6 +18,7 @@
     "daisyui": "^2.47.0",
     "flowbite": "^1.6.3",
     "flowbite-react": "^0.3.8",
+    "formik": "^2.2.9",
     "headlessui": "^0.0.0",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.3",
