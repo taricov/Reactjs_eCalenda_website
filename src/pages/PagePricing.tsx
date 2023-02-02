@@ -7,7 +7,7 @@ const prices = [
   },
 ];
 const ItemListChecked = ({ ...props }) => (
-  <li className="flex items-center space-x-2">
+  <li className=" flex items-center space-x-2">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
@@ -15,12 +15,15 @@ const ItemListChecked = ({ ...props }) => (
       className="flex-shrink-0 w-6 h-6"
     >
       <path
+        className="transition-all duration-200 group-hover:text-white"
         fillRule="evenodd"
         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
         clipRule="evenodd"
       ></path>
     </svg>
-    <span>{props.title}</span>
+    <span className="transition-all duration-200 group-hover:text-white dark:group-hover:text-white">
+      {props.title}
+    </span>
   </li>
 );
 export default function PagePricing() {
@@ -62,7 +65,7 @@ export default function PagePricing() {
                   <p className="mt-3 leading-relaxed dark:text-app-color-200 text-app-color-700">
                     Etiam ac convallis enim, eget euismod dolor.
                   </p>
-                  <ul className="flex-1 mb-6 flex-col space-y-2 dark:text-app-color-200 text-app-color-700">
+                  <ul className="flex-1 mb-6 flex-col space-y-2 dark:text-app-color-300 text-app-color-700">
                     <ItemListChecked title="lorem ipsum fefe" />
                     <ItemListChecked title="lorem ipsum fefe" />
                     <ItemListChecked title="lorem ipsum fefe" />
@@ -118,7 +121,7 @@ export default function PagePricing() {
                   <p className="leading-relaxed dark:text-app-color-200 text-app-color-700">
                     Phasellus ultrices bibendum nibh in vehicula.
                   </p>
-                  <ul className="space-y-2 dark:text-app-color-200 text-app-color-700">
+                  <ul className="space-y-2 dark:text-app-color-300 text-app-color-700">
                     <ItemListChecked title="lorem ipsum fefe" />
                     <ItemListChecked title="lorem ipsum fefe" />
                     <ItemListChecked title="lorem ipsum fefe" />
