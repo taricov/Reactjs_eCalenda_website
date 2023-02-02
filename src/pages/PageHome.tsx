@@ -5,6 +5,7 @@ import SectionTitle from "../components/SectionTitle";
 import AppHeader from "../layout/AppHeader";
 import FeatureSection from "../layout/FeatureSection";
 import HeroSection from "./HeroSection";
+import { Fade } from "react-awesome-reveal";
 
 export default function PageHome() {
   return (

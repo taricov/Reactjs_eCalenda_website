@@ -1,3 +1,6 @@
+import { useEffect, useRef } from "react";
+import ScrollReveal from "scrollreveal";
+
 const featuresObj = {
   "": [
     "feature 1",
@@ -70,9 +73,28 @@ const Feature = ({ ...props }) => {
 };
 
 export default function PageTerms() {
+  // const sectionRef = useRef<any>(null);
+
+  // const sr = ScrollReveal({
+  //   origin: "top",
+  //   distance: "30px",
+  //   duration: 2000,
+  //   reset: true,
+  // });
+
+  // useEffect(() => {
+  //   if (sectionRef.current)
+  //     ScrollReveal().reveal(sectionRef.current, {
+  //       interval: 200,
+  //     });
+  // }, []);
+
   return (
     <>
-      <section className="text-app-color-700 dark:text-app-color-200 body-font">
+      <section
+        // ref={sectionRef}
+        className="text-app-color-700 dark:text-app-color-200 body-font"
+      >
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-app-color-700 dark:text-app-color-50 mb-4">

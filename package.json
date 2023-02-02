@@ -9,18 +9,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.7",
+    "@emotion/react": "^11.10.5",
+    "@headlessui/react": "^1.7.8",
     "@heroicons/react": "^2.0.13",
     "@tanstack/react-query": "^4.23.0",
+    "@types/scrollreveal": "^0.0.8",
     "axios": "^1.2.4",
     "daisyui": "^2.47.0",
     "flowbite": "^1.6.3",
     "flowbite-react": "^0.3.8",
     "headlessui": "^0.0.0",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.7.0",
-    "react-social-login": "^3.4.16"
+    "react-social-login": "^3.4.16",
+    "scrollreveal": "^4.0.9"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",

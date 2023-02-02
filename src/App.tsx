@@ -11,6 +11,7 @@ import APIDox from "./components/APIDox";
 import axios from "axios";
 import API_Sidebar from "./layout/ApiDocsNavBar";
 import PageApiDocs from "./pages/PageApiDocs";
+import PagePricing from "./pages/PagePricing";
 import {
   BrowserRouter as Router,
   createBrowserRouter,
@@ -23,6 +24,7 @@ import PageHome from "./pages/PageHome";
 import PageHelpCenter from "./pages/PageHelpCenter";
 import PageUpdates from "./pages/PageUpdates";
 import AppFooter from "./layout/AppFooter";
+
 import PageFeatures from "./pages/PageFeatures";
 import PageContacts from "./pages/PageContacts";
 import PageSignIn from "./pages/PageSignIn";
@@ -82,6 +84,7 @@ function App() {
           <Route path="/terms" element={<PageTerms />} />
           <Route path="/features" element={<PageFeatures />} />
           <Route path="/testimonials" element={<PageTestimonails />} />
+          <Route path="/plans" element={<PagePricing />} />
           <Route path="/contacts" element={<PageContacts />} />
           <Route path="/register" element={<PageRegistration />} />
           <Route path="/api-docs" element={<PageApiDocs />} />

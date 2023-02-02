@@ -1,6 +1,23 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Fade } from "react-awesome-reveal";
+import ScrollReveal from "scrollreveal";
 
 export default function Pricing() {
+  const sectionRef = useRef<any>(null);
+
+  const sr = ScrollReveal({
+    origin: "top",
+    distance: "30px",
+    duration: 2000,
+    reset: true,
+  });
+
+  useEffect(() => {
+    if (sectionRef.current)
+      ScrollReveal().reveal(sectionRef.current, {
+        interval: 200,
+      });
+  }, []);
   const [priceToggle, setPriceToggle] = useState<boolean>(false);
 
   const prices = [
@@ -43,8 +60,12 @@ export default function Pricing() {
             </label>
           </div>
 
-          <div className="pt-16 flex flex-col lg:flex-row gap-5 items-center sm:justify-start">
+          <div
+            className="pt-16 flex flex-col lg:flex-row gap-5 items-center sm:justify-start"
+            ref={sectionRef}
+          >
             {/* Basic Card */}
+            {/* <Fade direction={"right"} cascade duration={1000} fraction={0}> */}
             <div className="sm:w-96 w-fit p-8 bg-white text-center rounded-3xl pr-4 sm:pr-16 shadow-xl">
               {/* <h1 className="text-black font-semibold text-2xl">Basic</h1> */}
               <p className="pt-2 tracking-wide">
@@ -177,6 +198,7 @@ export default function Pricing() {
                 </a>
               </div>
             </div>
+            {/* </Fade> */}
           </div>
         </div>
       </div>
