@@ -6,6 +6,7 @@ import AppHeader from "../layout/AppHeader";
 import FeatureSection from "../layout/FeatureSection";
 import HeroSection from "./HeroSection";
 import { Fade } from "react-awesome-reveal";
+import PagePricing from "./PagePricing";
 
 export default function PageHome() {
   return (
@@ -63,7 +64,8 @@ export default function PageHome() {
         </FeatureSection>
         {/* <LongPane /> */}
         <AppStats />
-        <Pricing />
+        {/* <Pricing /> */}
+        <PagePricing />
       </>
     </>
   );

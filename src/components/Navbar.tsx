@@ -70,6 +70,27 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
               </a>
             </li>
             <li>
+              <div className="dropdown">
+                <label
+                  tabIndex={0}
+                  className="btn-default text-app-color-500 dark:text-app-color-100"
+                >
+                  Click
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content top-[55px] menu p-2 shadow dark:text-app-color-200 text-app-color-600 dark:bg-app-color-900 bg-app-color-100 rounded-br rounded-bl w-52"
+                >
+                  <li className="w-full">
+                    <a className="w-full">Item 1</a>
+                  </li>
+                  <li>
+                    <a className="w-full">Item 2</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
               <a
                 href="/latest-updates"
                 className="text-app-color-500 dark:text-app-color-100"

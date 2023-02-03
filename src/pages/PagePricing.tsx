@@ -32,7 +32,7 @@ export default function PagePricing() {
   return (
     <>
       <div className="mx-auto w-full">
-        <section className="py-20 text-app-color-700 dark:text-app-color-100">
+        <section className="py-20 text-app-color-700 dark:text-app-color-100 mx-20">
           <div className="container px-4 mx-auto">
             <div className="max-w-2xl mx-auto text-center">
               <span className="font-bold tracking-wider uppercase text-app-color-700 dark:text-app-color-600">

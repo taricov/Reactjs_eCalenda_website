@@ -39,7 +39,7 @@ export default function PageApiDocs() {
           </div>
           <ul className="flex flex-col py-4">
             <MenuItem title="Introduction" scrollTo="" />
-            <MenuItem title="first item" scrollTo="" />
+            <MenuItem title="" scrollTo="" />
             <MenuItem title="first item" scrollTo="" />
             <MenuItem title="first item" scrollTo="" />
             <MenuItem title="first item" scrollTo="" />
@@ -51,7 +51,7 @@ export default function PageApiDocs() {
             <div className="bg-white bg-opacity-2">something</div>
             <div className="mockup-code w-3/4 mx-auto text-sm bg-gradient-to-r from-app-color-900">
               <pre data-prefix="1">
-                <code>npm i daisyui</code>
+                <code lang="javascript language">npm i daisyui</code>
               </pre>
               <pre data-prefix="2">
                 <code>installing...</code>
