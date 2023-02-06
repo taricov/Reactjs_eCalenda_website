@@ -33,6 +33,7 @@ import PageTerms from "./pages/PageTerms";
 import PageTestimonails from "./pages/PageTestimonials";
 import PageHowTo from "./pages/PageHowTo";
 import PageTeam from "./pages/PageTeam";
+import PagePrivacy from "./pages/PagePrivacy";
 
 // const router = createBrowserRouter([
 //   {
@@ -99,6 +100,7 @@ function App() {
           <Route path="/meeting" element={<PageHowTo />} />
           <Route path="/how-to" element={<PageHowTo />} />
           <Route path="/team" element={<PageTeam />} />
+          <Route path="/privacy" element={<PagePrivacy />} />
         </Routes>
       </Router>
       <AppFooter />

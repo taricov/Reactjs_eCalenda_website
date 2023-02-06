@@ -10,7 +10,7 @@ export default function PageTerms() {
           </div>
           <a href="#footer" className=" icon-close popup-close icon-cross"></a>
         </div>
-        <div className=" copy">
+        <div className="">
           <article>
             <h4 className="subheader">Terms and Conditions</h4>
             <p className="terms">
