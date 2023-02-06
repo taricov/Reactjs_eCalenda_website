@@ -31,7 +31,7 @@ export default function PagePricing() {
 
   return (
     <>
-      <div className="mx-auto w-full">
+      <div className="mx-auto w-full" id="plans">
         <section className="py-20 text-app-color-700 dark:text-app-color-100 mx-20">
           <div className="container px-4 mx-auto">
             <div className="max-w-2xl mx-auto text-center">
@@ -56,7 +56,7 @@ export default function PagePricing() {
               </label>
             </div>
             <div className="flex flex-wrap items-stretch -mx-4">
-              <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+              <div className=" flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
                 <div className="flex flex-col p-6 space-y-6 rounded shadow sm:p-8 text-app-color-700 dark:text-app-color-100 dark:bg-app-color-900 bg-app-color-100">
                   <div className="space-y-2">
                     <h4 className="text-2xl font-bold">Beginner</h4>

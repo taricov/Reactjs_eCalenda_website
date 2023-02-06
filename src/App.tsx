@@ -32,6 +32,7 @@ import PageRegistration from "./pages/PageRegistration";
 import PageTerms from "./pages/PageTerms";
 import PageTestimonails from "./pages/PageTestimonials";
 import PageHowTo from "./pages/PageHowTo";
+import PageTeam from "./pages/PageTeam";
 
 // const router = createBrowserRouter([
 //   {
@@ -91,7 +92,13 @@ function App() {
           <Route path="/api-docs" element={<PageApiDocs />} />
           <Route path="/latest-updates" element={<PageUpdates />} />
           <Route path="/help-center" element={<PageHelpCenter />} />
+          {/* <Route path="/upcoming-features" element={<PageHelpCenter />} /> */}
+          {/* <Route path="/about" element={<PageHelpCenter />} /> */}
+          {/* <Route path="/tutorial" element={<PageHelpCenter />} /> */}
+          {/* <Route path="/integrations" element={<PageHelpCenter />} /> */}
+          <Route path="/meeting" element={<PageHowTo />} />
           <Route path="/how-to" element={<PageHowTo />} />
+          <Route path="/team" element={<PageTeam />} />
         </Routes>
       </Router>
       <AppFooter />

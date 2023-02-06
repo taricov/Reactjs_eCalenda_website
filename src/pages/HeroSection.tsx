@@ -1,5 +1,3 @@
-import IframeEmbed from "../components/IframeEmbed";
-
 export default function HeroSection() {
   return (
     <section>
@@ -29,9 +27,41 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 dark:bg-gray-500">
-        <IframeEmbed embedId="rokGy0huYEA" />
-      </div>
+      <label
+        className="group w-5/6 mx-auto mb-12 -mt-20 rounded-lg lg:-mt-40 dark:bg-gray-500 relative hover:opacity-70 transition-all duration-500 cursor-pointer shadow-2xl hover:-translate-y-1"
+        htmlFor="my-modal-4"
+      >
+        {/* <IframeEmbed embedId="rokGy0huYEA" /> */}
+        <div className="w-4/5 mx-auto">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-full bg-app-color-900 bg-opacity-40"></div>
+          <button
+            type="button"
+            className="transition duration-500 group-hover:scale-110 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-app-color-700 bg-app-color-700 dark:bg-app-color-100 shadow-xl rounded-3xl outline-none px-4 py-1 w-fit flex items-center justify-center"
+          >
+            <span className="mx-auto text-app-color-200 dark:text-app-color-700">
+              Watch Video
+            </span>
+            <span className="w-6  text-app-color-200 dark:text-app-color-700">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className=""
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+          </button>
+          <img
+            src="https://images.unsplash.com/photo-1511204579483-e5c2b1d69acd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1871&amp;q=80"
+            alt=""
+          />
+        </div>
+      </label>
 
       {/* <img
         src="https://source.unsplash.com/random/480x320"

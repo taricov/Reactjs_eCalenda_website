@@ -120,6 +120,135 @@ export default function PageHowTo() {
               ))}
             </div>
           </div>
+          <div className="text-2xl text-app-color-700 border-2 border-app-color-400 rounded-lg py-5 dark:text-app-color-100 font-bold text-center my-10">
+            <h1>How to Create a new Event in 3 ways even with one click</h1>
+          </div>
+          <div className="flex justify-between items-center px-10 flex-wrap gap-5">
+            <div className="">
+              <ol className="space-y-4 w-72">
+                <li>
+                  <div
+                    className="w-full p-4 text-app-color-100 rounded-lg bg-app-color-700 dark:bg-app-color-900 dark:text-app-color-200 opacity-10"
+                    role="alert"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="sr-only">User info</span>
+                      <h3 className="font-medium">1. User info</h3>
+                      <svg
+                        aria-hidden="true"
+                        className="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div
+                    className="w-full p-4 text-green-700 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-green-400"
+                    role="alert"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="sr-only">Account info</span>
+                      <h3 className="font-medium">2. Account info</h3>
+                      <svg
+                        aria-hidden="true"
+                        className="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="w-full p-4 text-blue-700 bg-blue-100 border border-blue-300 rounded-lg dark:bg-gray-800 dark:border-blue-800 dark:text-blue-400"
+                    role="alert"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="sr-only">Social accounts</span>
+                      <h3 className="font-medium">3. Social accounts</h3>
+                      <svg
+                        aria-hidden="true"
+                        className="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="w-full p-4 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                    role="alert"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="sr-only">Review</span>
+                      <h3 className="font-medium">4. Review</h3>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="w-full p-4 text-gray-900 bg-gray-100 border border-gray-300 rounded-lg dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                    role="alert"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="sr-only">Confirmation</span>
+                      <h3 className="font-medium">5. Confirmation</h3>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div className="w-fit flex justify-center items-center flex-1">
+              <div className="w-64 carousel rounded-box mx-auto">
+                <div className="carousel-item w-full">
+                  <img
+                    src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80"
+                    className="w-full"
+                    alt="Tailwind CSS Carousel component"
+                  />
+                </div>
+                <div className="carousel-item w-full">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYK-c5BI45eLw50VGxds1c9xq-89r81oiDBzOXI1ODDOmZ4sbkpHOtNb82C4ogW_Gqlfc&usqp=CAU"
+                    className="w-full"
+                    alt="Tailwind CSS Carousel component"
+                  />
+                </div>
+                <div className="carousel-item w-full">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvND6oTsOKeRkON2uC7IV6V1l4s8jW7CIGo4ttPojdTdJ4jGjPXG3BZF6_gRHDJeCKsio&usqp=CAU"
+                    className="w-full"
+                    alt="Tailwind CSS Carousel component"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

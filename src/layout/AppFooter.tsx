@@ -51,23 +51,31 @@ export default function AppFooter() {
                   href="/"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
-                  About
+                  About Us
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/team"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
-                  Team
+                  Our Team
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/api-docs"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
-                  References
+                  API Docs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/plans"
+                  className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
+                >
+                  Plans
                 </a>
               </li>
               <li>
@@ -85,7 +93,7 @@ export default function AppFooter() {
             <ul className="mt-2 space-y-2">
               <li>
                 <a
-                  href="/"
+                  href="/features"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
                   Features
@@ -93,7 +101,7 @@ export default function AppFooter() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/upcoming-features"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
                   Upcoming
@@ -101,10 +109,10 @@ export default function AppFooter() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/latest-updates"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
-                  Tutorial
+                  Latest Updates
                 </a>
               </li>
               <li>
@@ -115,10 +123,18 @@ export default function AppFooter() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/integrations"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
                   Integrations
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/terms"
+                  className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
+                >
+                  Terms of Use
                 </a>
               </li>
             </ul>
@@ -130,7 +146,31 @@ export default function AppFooter() {
             <ul className="mt-2 space-y-2">
               <li>
                 <a
-                  href="/"
+                  href="/help-center"
+                  className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
+                >
+                  Help Center
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/tutorial"
+                  className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
+                >
+                  Tutorial{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/how-to"
+                  className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
+                >
+                  How To{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/testimonials"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
                   Testimonials
@@ -138,28 +178,13 @@ export default function AppFooter() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/contacts"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
                   Feedback
                 </a>
               </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
-                >
-                  Suggest
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
-                >
-                  Terms
-                </a>
-              </li>
+
               <li>
                 <a
                   href="/"
@@ -175,7 +200,7 @@ export default function AppFooter() {
             <ul className="mt-2 space-y-2">
               <li>
                 <a
-                  href="/feedback"
+                  href="/contacts"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
                   Email Us
@@ -183,10 +208,26 @@ export default function AppFooter() {
               </li>
               <li>
                 <a
-                  href="/feedback"
+                  href="/contacts"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
                   Get In Touch
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contacts"
+                  className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
+                >
+                  Suggest
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/meeting"
+                  className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
+                >
+                  Custom Request
                 </a>
               </li>
               <li>

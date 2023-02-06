@@ -446,7 +446,7 @@ export default function PageRegistration() {
                   href="#"
                   className="transition duration-200 text-app-color-400 dark:text-app-color-500 hover:text-app-color-700 dark:hover:text-app-color-400"
                 >
-                  Term & Conditions
+                  Terms of Use
                 </a>{" "}
                 and{" "}
                 <a

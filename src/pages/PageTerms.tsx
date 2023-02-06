@@ -1,389 +1,497 @@
 export default function PageTerms() {
   return (
     <>
-      <section className="px-4 py-24 mx-auto max-w-7xl">
-        <div className="mb-24 text-left md:text-center">
-          <h1 className="mb-4 text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
-            Privacy Policy
-          </h1>
-          <p className="mb-5 text-base text-gray-500 md:text-lg">
-            Last updated: 20th Dec 2020
-          </p>
+      <div className="mx-16 modal-content">
+        <div className=" header">
+          <div className="">
+            <h3 className="font-bold text-[40px] dark:text-app-color-100 text-app-color-700 text-center mt-30 mb-10">
+              Terms of Use
+            </h3>
+          </div>
+          <a href="#footer" className=" icon-close popup-close icon-cross"></a>
         </div>
-        <div className="mx-auto prose">
-          <h2 id="1legalnotices">1. Legal Notices</h2>
-
-          <p>
-            We, the Operators of this Website, provide it as a public service to
-            our users.
-          </p>
-
-          <p>
-            Please carefully review the following basic rules that govern your
-            use of the Website. Please note that your use of the Website
-            constitutes your unconditional agreement to follow and be bound by
-            these Terms and Conditions of Use. If you (the "User") do not agree
-            to them, do not use the Website, provide any materials to the
-            Website or download any materials from them.
-          </p>
-
-          <p>
-            The Operators reserve the right to update or modify these Terms and
-            Conditions at any time without prior notice to User. Your use of the
-            Website following any such change constitutes your unconditional
-            agreement to follow and be bound by these Terms and Conditions as
-            changed. For this reason, we encourage you to review these Terms and
-            Conditions of Use whenever you use the Website.
-          </p>
-
-          <p>
-            These Terms and Conditions of Use apply to the use of the Website
-            and do not extend to any linked third party sites. These Terms and
-            Conditions and our Privacy Policy, which are hereby incorporated by
-            reference, contain the entire agreement (the “Agreement”) between
-            you and the Operators with respect to the Website. Any rights not
-            expressly granted herein are reserved.
-          </p>
-
-          <h2 id="2permittedandprohibiteduses">
-            2. Permitted and Prohibited Uses
-          </h2>
-
-          <p>
-            You may use the the Website for the sole purpose of sharing and
-            exchanging ideas with other Users. You may not use the the Website
-            to violate any applicable local, state, national, or international
-            law, including without limitation any applicable laws relating to
-            antitrust or other illegal trade or business practices, federal and
-            state securities laws, regulations promulgated by the U.S.
-            Securities and Exchange Commission, any rules of any national or
-            other securities exchange, and any U.S. laws, rules, and regulations
-            governing the export and re-export of commodities or technical data.
-          </p>
-
-          <p>
-            You may not upload or transmit any material that infringes or
-            misappropriates any person's copyright, patent, trademark, or trade
-            secret, or disclose via the the Website any information the
-            disclosure of which would constitute a violation of any
-            confidentiality obligations you may have.
-          </p>
-
-          <p>
-            You may not upload any viruses, worms, Trojan horses, or other forms
-            of harmful computer code, nor subject the Website's network or
-            servers to unreasonable traffic loads, or otherwise engage in
-            conduct deemed disruptive to the ordinary operation of the Website.
-          </p>
-
-          <p>
-            You are strictly prohibited from communicating on or through the
-            Website any unlawful, harmful, offensive, threatening, abusive,
-            libelous, harassing, defamatory, vulgar, obscene, profane, hateful,
-            fraudulent, sexually explicit, racially, ethnically, or otherwise
-            objectionable material of any sort, including, but not limited to,
-            any material that encourages conduct that would constitute a
-            criminal offense, give rise to civil liability, or otherwise violate
-            any applicable local, state, national, or international law.
-          </p>
-
-          <p>
-            You are expressly prohibited from compiling and using other Users'
-            personal information, including addresses, telephone numbers, fax
-            numbers, email addresses or other contact information that may
-            appear on the Website, for the purpose of creating or compiling
-            marketing and/or mailing lists and from sending other Users
-            unsolicited marketing materials, whether by facsimile, email, or
-            other technological means.
-          </p>
-
-          <p>
-            You also are expressly prohibited from distributing Users' personal
-            information to third-party parties for marketing purposes. The
-            Operators shall deem the compiling of marketing and mailing lists
-            using Users' personal information, the sending of unsolicited
-            marketing materials to Users, or the distribution of Users' personal
-            information to third parties for marketing purposes as a material
-            breach of these Terms and Conditions of Use, and the Operators
-            reserve the right to terminate or suspend your access to and use of
-            the Website and to suspend or revoke your membership in the
-            consortium without refund of any membership dues paid.
-          </p>
-
-          <p>
-            The Operators note that unauthorized use of Users' personal
-            information in connection with unsolicited marketing correspondence
-            also may constitute violations of various state and federal
-            anti-spam statutes. The Operators reserve the right to report the
-            abuse of Users' personal information to the appropriate law
-            enforcement and government authorities, and the Operators will fully
-            cooperate with any authorities investigating violations of these
-            laws.
-          </p>
-
-          <h2 id="3usersubmissions">3 User Submissions</h2>
-
-          <p>
-            The Operators do not want to receive confidential or proprietary
-            information from you through the Website. Any material, information,
-            or other communication you transmit or post ("Contributions") to the
-            Website will be considered non-confidential.
-          </p>
-
-          <p>
-            All contributions to this site are licensed by you under the MIT
-            License to anyone who wishes to use them, including the Operators.
-          </p>
-
-          <p>
-            If you work for a company or at a University, it's likely that
-            you're not the copyright holder of anything you make, even in your
-            free time. Before making contributions to this site, get written
-            permission from your employer.
-          </p>
-
-          <h2 id="4userdiscussionlistsandforums">
-            4. User Discussion Lists and Forums
-          </h2>
-
-          <p>
-            The Operators may, but are not obligated to, monitor or review any
-            areas on the Website where users transmit or post communications or
-            communicate solely with each other, including but not limited to
-            user forums and email lists, and the content of any such
-            communications. The Operators, however, will have no liability
-            related to the content of any such communications, whether or not
-            arising under the laws of copyright, libel, privacy, obscenity, or
-            otherwise. The Operators may edit or remove content on the the
-            Website at their discretion at any time.
-          </p>
-
-          <h2 id="5useofpersonallyidentifiableinformation">
-            5. Use of Personally Identifiable Information
-          </h2>
-
-          <p>
-            Information submitted to the Website is governed according to the
-            Operators’s current Privacy Policy and the stated license of this
-            website.
-          </p>
-
-          <p>
-            You agree to provide true, accurate, current, and complete
-            information when registering with the Website. It is your
-            responsibility to maintain and promptly update this account
-            information to keep it true, accurate, current, and complete. If you
-            provides any information that is fraudulent, untrue, inaccurate,
-            incomplete, or not current, or we have reasonable grounds to suspect
-            that such information is fraudulent, untrue, inaccurate, incomplete,
-            or not current, we reserve the right to suspend or terminate your
-            account without notice and to refuse any and all current and future
-            use of the Website.
-          </p>
-
-          <p>
-            Although sections of the Website may be viewed simply by visiting
-            the Website, in order to access some Content and/or additional
-            features offered at the Website, you may need to sign on as a guest
-            or register as a member. If you create an account on the Website,
-            you may be asked to supply your name, address, a User ID and
-            password. You are responsible for maintaining the confidentiality of
-            the password and account and are fully responsible for all
-            activities that occur in connection with your password or account.
-            You agree to immediately notify us of any unauthorized use of either
-            your password or account or any other breach of security. You
-            further agree that you will not permit others, including those whose
-            accounts have been terminated, to access the Website using your
-            account or User ID. You grant the Operators and all other persons or
-            entities involved in the operation of the Website the right to
-            transmit, monitor, retrieve, store, and use your information in
-            connection with the operation of the Website and in the provision of
-            services to you. The Operators cannot and do not assume any
-            responsibility or liability for any information you submit, or your
-            or third parties’ use or misuse of information transmitted or
-            received using website. To learn more about how we protect the
-            privacy of the personal information in your account, please visit
-            our Privacy Policy.
-          </p>
-
-          <h2 id="6indemnification">6. Indemnification</h2>
-
-          <p>
-            You agree to defend, indemnify and hold harmless the Operators,
-            agents, vendors or suppliers from and against any and all claims,
-            damages, costs and expenses, including reasonable attorneys' fees,
-            arising from or related to your use or misuse of the Website,
-            including, without limitation, your violation of these Terms and
-            Conditions, the infringement by you, or any other subscriber or user
-            of your account, of any intellectual property right or other right
-            of any person or entity.
-          </p>
-
-          <h2 id="7termination">7. Termination</h2>
-
-          <p>
-            These Terms and Conditions of Use are effective until terminated by
-            either party. If you no longer agree to be bound by these Terms and
-            Conditions, you must cease use of the Website. If you are
-            dissatisfied with the Website, their content, or any of these terms,
-            conditions, and policies, your sole legal remedy is to discontinue
-            using the Website. The Operators reserve the right to terminate or
-            suspend your access to and use of the Website, or parts of the
-            Website, without notice, if we believe, in our sole discretion, that
-            such use (i) is in violation of any applicable law; (ii) is harmful
-            to our interests or the interests, including intellectual property
-            or other rights, of another person or entity; or (iii) where the
-            Operators have reason to believe that you are in violation of these
-            Terms and Conditions of Use.
-          </p>
-
-          <h2 id="8warrantydisclaimer">8. WARRANTY DISCLAIMER</h2>
-
-          <p>
-            THE WEBSITE AND ASSOCIATED MATERIALS ARE PROVIDED ON AN "AS IS" AND
-            "AS AVAILABLE" BASIS. TO THE FULL EXTENT PERMISSIBLE BY APPLICABLE
-            LAW, THE OPERATORS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED,
-            INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY
-            AND FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT OF
-            INTELLECTUAL PROPERTY. THE OPERATORS MAKE NO REPRESENTATIONS OR
-            WARRANTY THAT THE WEBSITE WILL MEET YOUR REQUIREMENTS, OR THAT YOUR
-            USE OF THE WEBSITE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR
-            FREE; NOR DO THE OPERATORS MAKE ANY REPRESENTATION OR WARRANTY AS TO
-            THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE WEBSITE. THE
-            OPERATORS MAKE NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS
-            OR IMPLIED, AS TO THE OPERATION OF THE WEBSITE OR THE INFORMATION,
-            CONTENT, MATERIALS, OR PRODUCTS INCLUDED ON THE WEBSITE.
-          </p>
-
-          <p>
-            IN NO EVENT SHALL THE OPERATORS OR ANY OF THEIR AGENTS, VENDORS OR
-            SUPPLIERS BE LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT
-            LIMITATION, DAMAGES FOR LOSS OF PROFITS, BUSINESS INTERRUPTION, LOSS
-            OF INFORMATION) ARISING OUT OF THE USE, MISUSE OF OR INABILITY TO
-            USE THE WEBSITE, EVEN IF THE OPERATORS HAVE BEEN ADVISED OF THE
-            POSSIBILITY OF SUCH DAMAGES. THIS DISCLAIMER CONSTITUTES AN
-            ESSENTIAL PART OF THIS AGREEMENT. BECAUSE SOME JURISDICTIONS
-            PROHIBIT THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL
-            OR INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
-          </p>
-
-          <p>
-            YOU UNDERSTAND AND AGREE THAT ANY CONTENT DOWNLOADED OR OTHERWISE
-            OBTAINED THROUGH THE USE OF THE WEBSITE IS AT YOUR OWN DISCRETION
-            AND RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO
-            YOUR COMPUTER SYSTEM OR LOSS OF DATA OR BUSINESS INTERRUPTION THAT
-            RESULTS FROM THE DOWNLOAD OF CONTENT. THE OPERATORS SHALL NOT BE
-            RESPONSIBLE FOR ANY LOSS OR DAMAGE CAUSED, OR ALLEGED TO HAVE BEEN
-            CAUSED, DIRECTLY OR INDIRECTLY, BY THE INFORMATION OR IDEAS
-            CONTAINED, SUGGESTED OR REFERENCED IN OR APPEARING ON THE WEBSITE.
-            YOUR PARTICIPATION IN THE WEBSITE IS SOLELY AT YOUR OWN RISK. NO
-            ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM
-            THE OPERATORS OR THROUGH THE OPERATORS, THEIR EMPLOYEES, OR THIRD
-            PARTIES SHALL CREATE ANY WARRANTY NOT EXPRESSLY MADE HEREIN. YOU
-            ACKNOWLEDGE, BY YOUR USE OF THE THE WEBSITE, THAT YOUR USE OF THE
-            WEBSITE IS AT YOUR SOLE RISK.
-          </p>
-
-          <p>
-            LIABILITY LIMITATION. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL OR
-            EQUITABLE THEORY, WHETHER IN TORT, CONTRACT, NEGLIGENCE, STRICT
-            LIABILITY OR OTHERWISE, SHALL THE OPERATORS OR ANY OF THEIR AGENTS,
-            VENDORS OR SUPPLIERS BE LIABLE TO USER OR TO ANY OTHER PERSON FOR
-            ANY INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL LOSSES OR DAMAGES
-            OF ANY NATURE ARISING OUT OF OR IN CONNECTION WITH THE USE OF OR
-            INABILITY TO USE THE THE WEBSITE OR FOR ANY BREACH OF SECURITY
-            ASSOCIATED WITH THE TRANSMISSION OF SENSITIVE INFORMATION THROUGH
-            THE WEBSITE OR FOR ANY INFORMATION OBTAINED THROUGH THE WEBSITE,
-            INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOST PROFITS, LOSS OF
-            GOODWILL, LOSS OR CORRUPTION OF DATA, WORK STOPPAGE, ACCURACY OF
-            RESULTS, OR COMPUTER FAILURE OR MALFUNCTION, EVEN IF AN AUTHORIZED
-            REPRESENTATIVE OF THE OPERATORS HAS BEEN ADVISED OF OR SHOULD HAVE
-            KNOWN OF THE POSSIBILITY OF SUCH DAMAGES.
-          </p>
-
-          <p>
-            THE OPERATORS'S TOTAL CUMULATIVE LIABILITY FOR ANY AND ALL CLAIMS IN
-            CONNECTION WITH THE WEBSITE WILL NOT EXCEED FIVE U.S. DOLLARS
-            ($5.00). USER AGREES AND ACKNOWLEDGES THAT THE FOREGOING LIMITATIONS
-            ON LIABILITY ARE AN ESSENTIAL BASIS OF THE BARGAIN AND THAT THE
-            OPERATORS WOULD NOT PROVIDE THE WEBSITE ABSENT SUCH LIMITATION.
-          </p>
-
-          <h2 id="9general">9. General</h2>
-
-          <p>
-            The Website is hosted in the United States. The Operators make no
-            claims that the Content on the Website is appropriate or may be
-            downloaded outside of the United States. Access to the Content may
-            not be legal by certain persons or in certain countries. If you
-            access the Website from outside the United States, you do so at your
-            own risk and are responsible for compliance with the laws of your
-            jurisdiction. The provisions of the UN Convention on Contracts for
-            the International Sale of Goods will not apply to these Terms. A
-            party may give notice to the other party only in writing at that
-            party's principal place of business, attention of that party's
-            principal legal officer, or at such other address or by such other
-            method as the party shall specify in writing. Notice shall be deemed
-            given upon personal delivery or facsimile, or, if sent by certified
-            mail with postage prepaid, 5 business days after the date of
-            mailing, or, if sent by international overnight courier with postage
-            prepaid, 7 business days after the date of mailing. If any provision
-            herein is held to be unenforceable, the remaining provisions will
-            continue in full force without being affected in any way. Further,
-            the parties agree to replace such unenforceable provision with an
-            enforceable provision that most closely approximates the intent and
-            economic effect of the unenforceable provision. Section headings are
-            for reference purposes only and do not define, limit, construe or
-            describe the scope or extent of such section. The failure of the
-            Operators to act with respect to a breach of this Agreement by you
-            or others does not constitute a waiver and shall not limit the
-            Operators' rights with respect to such breach or any subsequent
-            breaches. Any action or proceeding arising out of or related to this
-            Agreement or User's use of the Website must be brought in the courts
-            of Belgium, and you consent to the exclusive personal jurisdiction
-            and venue of such courts. Any cause of action you may have with
-            respect to your use of the Website must be commenced within one (1)
-            year after the claim or cause of action arises. These Terms set
-            forth the entire understanding and agreement of the parties, and
-            supersedes any and all oral or written agreements or understandings
-            between the parties, as to their subject matter. The waiver of a
-            breach of any provision of this Agreement shall not be construed as
-            a waiver of any other or subsequent breach.
-          </p>
-
-          <h2 id="10linkstoothermaterials">10. Links to Other Materials</h2>
-
-          <p>
-            The Website may contain links to sites owned or operated by
-            independent third parties. These links are provided for your
-            convenience and reference only. We do not control such sites and,
-            therefore, we are not responsible for any content posted on these
-            sites. The fact that the Operators offer such links should not be
-            construed in any way as an endorsement, authorization, or
-            sponsorship of that site, its content or the companies or products
-            referenced therein, and the Operators reserve the right to note its
-            lack of affiliation, sponsorship, or endorsement on the Website. If
-            you decide to access any of the third party sites linked to by the
-            Website, you do this entirely at your own risk. Because some sites
-            employ automated search results or otherwise link you to sites
-            containing information that may be deemed inappropriate or
-            offensive, the Operators cannot be held responsible for the
-            accuracy, copyright compliance, legality, or decency of material
-            contained in third party sites, and you hereby irrevocably waive any
-            claim against us with respect to such sites.
-          </p>
-
-          <h2 id="11notificationofpossiblecopyrightinfringement">
-            11. Notification Of Possible Copyright Infringement
-          </h2>
-
-          <p>
-            In the event you believe that material or content published on the
-            Website may infringe on your copyright or that of another, please{" "}
-            <a href="#">Contact Us</a>.
-          </p>
+        <div className=" copy">
+          <article>
+            <h4 className="subheader">Terms and Conditions</h4>
+            <p className="terms">
+              Welcome to the eCalenda.com website (collectively, including all
+              content and functionality available through the eCalenda.com
+              domain name, the eCalenda blog, downloadable software, mobile
+              applications (including tablet applications) and other services
+              provided by us, referred to as the “Site”). By accessing or using
+              the Site, you (Site visitor, or “User”), whether registered or
+              not, accept these Terms of Use (“Agreement”), including as
+              applicable eCalenda Data Processing Addendum ('DPA') and our
+              Privacy Policy, which are incorporated into the Agreement, and
+              agree to be bound by these terms and all applicable laws of the
+              State of Oregon and the United States of America.
+            </p>
+            <p className="terms">
+              The Privacy Policy is available for review here:{" "}
+              <a
+                className="text-brandcolor"
+                href="https://www.eCalenda.com/privacy"
+              >
+                {" "}
+                https://www.eCalenda.com/privacy.
+              </a>
+            </p>
+            <p className="terms">
+              The eCalenda Data Processing Addendum is available here: <br />{" "}
+              <a
+                className="text-brandcolor"
+                href="https://www.eCalenda.com/blog/eCalenda-data-processing-addendum-dpa/"
+                target="_blank"
+              >
+                https://www.eCalenda.com/blog/eCalenda-data-processing-addendum-dpa/{" "}
+              </a>
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Use of Site</h4>
+            <p className="terms">
+              The Site is not intended for and may not be used by individuals
+              who are under thirteen years of age. By registering a eCalenda
+              account, the Site visitor or User promises that they are at least
+              eighteen years of age. The Site may not be used to gain or attempt
+              to gain a competitive advantage in eCalenda's industry market or
+              be used for any commercial purpose. Services and products are
+              intended only for persons who are legally permitted to enter
+              binding contracts. The information, opinions, images, messages,
+              website links, text information, music, videos, graphics, files,
+              ideas, data and any other content provided to us by Users (“User
+              Submissions”) and uploaded, published, displayed or otherwise made
+              available (“posted”) on the Site is not endorsed by eCalenda.
+              Users are solely responsible for the submissions he or she posts.
+              Users retain all ownership rights in his or her own User
+              Submissions. However, by submitting User Submissions to the Site,
+              Users have the right to grant to eCalenda a non-exclusive,
+              worldwide, non-revocable, transferable, royalty-free, and
+              perpetual right to use the User Submissions. Users rights are in
+              any manner or media now or later developed, for any purpose,
+              commercial, advertising, or otherwise, including the right to
+              translate, display, sub-license, reproduce, create derivative
+              works, distribute, assign and commercialize without any payment
+              due to User. User Submissions are not confidential or proprietary.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Third-Party Software Integrations</h4>
+            <p className="terms">
+              eCalenda integrates with a number of third-party apps and software
+              platforms to allow for greater functionality and expanded services
+              offerings. Some examples of these integrations include MailChimp
+              and Infusionsoft, for which the eCalenda user must maintain their
+              own MailChimp or Infusionsoft account, respectively. Users may
+              access content, products, or services from these third parties
+              through hyperlinks, banners, images, emails, in-app messages,
+              APIs, or other means. If you access any third party content,
+              products, or services through the Site, you should be aware of the
+              separate Privacy Policies and Terms of Use for those third
+              parties.
+            </p>
+            <p className="terms">
+              Some of these third party integrations, for example Stripe or
+              Square, provide electronic web-based transaction platforms for the
+              User to accept, manage, or otherwise process monetary or credit
+              transactions supporting the exchange of products and services with
+              their customers or other entities. For any such transaction,
+              eCalenda does not represent either the seller or buyer, and has no
+              control over and is not liable for the quality, safety,
+              lawfulness, or availability of any products or services offered.
+              The User agrees that eCalenda shall not be liable or responsible
+              for any damages, claims, liabilities, costs, harms,
+              inconveniences, privacy law violations, data breaches business
+              disruptions or expenditures of any kind that may arise or result
+              of or in connection with any transactions carried out through
+              these third party integrations. In the event that any User has a
+              dispute with any party to a transaction, the User agrees to
+              release, hold harmless, and indemnify eCalenda from all claims,
+              demands, actions, proceedings, costs, expenses and damages arising
+              out of or in connection with any transaction or dispute.
+            </p>
+            <p className="terms">
+              A complete list of eCalenda’s integrations can be found at{" "}
+              <a
+                className="text-brandcolor"
+                href="https://www.eCalenda.com/integrations"
+                target="_blank"
+              >
+                https://www.eCalenda.com/integrations
+              </a>
+              .
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Subscription Fees for Paid Services</h4>
+            <p className="terms">
+              eCalenda offers a free, basic software plan, but you may choose to
+              upgrade to a paid subscription. You agree to pay all applicable
+              fees related to your use of the Site and any services provided by
+              eCalenda as described on the eCalenda Products page and in related
+              sub-pages, which are available for review here:{" "}
+              <a
+                className="text-brandcolor"
+                href="https://www.eCalenda.com/pricing"
+                target="_blank"
+              >
+                {" "}
+                https://www.eCalenda.com/pricing.
+              </a>{" "}
+              By providing a payment method, you expressly authorize eCalenda to
+              charge the applicable cost of services, and other costs such as
+              overage fees and taxes, at regular intervals as set forth in each
+              paid product description. eCalenda will automatically renew and
+              charge your payment method based on the subscription plan chosen,
+              plus any additional overage or service fees, plus arrears due to
+              failure to process a payment owed during a previous billing cycle
+              if applicable. Payments are non-refundable, but eCalenda may
+              consider a request to refund a past payment on a case-by-case
+              basis.
+            </p>
+            <p className="terms">
+              By creating an account and upgrading to a paid subscription for a
+              eCalenda product or service, you consent to allow eCalenda to
+              charge your credit card (or other payment method) through its
+              payment processors for the amounts due for your initial
+              subscription period and for additional subscription periods until
+              your account is downgraded back to the Free, Basic eCalenda plan,
+              or until your canceled or deleted. Paid accounts will
+              automatically renew at the start of each new subscription period
+              unless you downgrade the account to a free plan or cancel the
+              account. Downgrading or cancellation will be effective immediately
+              and you will not be entitled to a refund of any payments for the
+              remainder of the unused subscription period. You may downgrade or
+              cancel your eCalenda account by sending an email to{" "}
+              <a className="text-brandcolor" href="mailto:help@eCalenda.com">
+                help@eCalenda.com
+              </a>
+              , or by navigating through the settings menus in the eCalenda
+              product.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Electronic Communications</h4>
+            <p className="terms">
+              By using the Site or registering for eCalenda, you consent to
+              receive electronic communications from us. These may include
+              operationally essential messages about topics including but not
+              limited to: changes to your account settings; appointments that
+              have been created, modified, or cancelled in your account; payment
+              receipts, notices of delinquent payment, or other transactional
+              information or requests; and other messages as consistent with our
+              Privacy Policy. eCalenda may also send you educational or
+              promotional messaging about new features, product offerings, or
+              services that it determines may be relevant to you, but which may
+              also be considered not operationally essential. You have the
+              ability to opt-out of any non-essential messaging at any time;
+              please refer to the{" "}
+              <a
+                className="text-brandcolor"
+                href="https://www.eCalenda.com/privacy"
+              >
+                eCalenda Privacy Policy
+              </a>{" "}
+              for more information.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Third Party Links and Content</h4>
+            <p className="terms">
+              By using the Site or registering for eCalenda, you consent to
+              receive electronic communications from us. These may include
+              operationally essential messages about topics including but not
+              limited to: changes to your account settings; appointments that
+              have been created, modified, or cancelled in your account; payment
+              receipts, notices of delinquent payment, or other transactional
+              information or requests; and other messages as consistent with our
+              Privacy Policy. eCalenda may also send you educational or
+              promotional messaging about new features, product offerings, or
+              services that it determines may be relevant to you, but which may
+              also be considered not operationally essential. You have the
+              ability to opt-out of any non-essential messaging at any time;
+              please refer to the{" "}
+              <a
+                className="text-brandcolor"
+                href="https://www.eCalenda.com/privacy"
+              >
+                eCalenda Privacy Policy
+              </a>{" "}
+              for more information.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Rules of Conduct</h4>
+            <p className="terms">
+              The following rules of conduct apply to Users use of the Site and
+              to all User Submissions posted on the Site. Users agree to adhere
+              to generally accepted rules of etiquette and behavior standards.
+              Additionally, as a User, you agree not to: post User Submissions
+              that are libelous, hateful, inflammatory, illegal, inaccurate,
+              malicious, false, pornographic, defamatory, harmful to others,
+              obscene, sexually explicit, harassing, vulgar, violent, racially,
+              ethnically or culturally offensive, or otherwise objectionable or
+              offensive in any way; post User Submissions that are invasive of
+              privacy, publicity, intellectual property, proprietary, or
+              contractual rights; post photos or videos of another person
+              without that person's consent; post any advertising or
+              solicitation or commercial content whatsoever on the Site; post
+              User Submissions or take any action on the Site that violates any
+              law, creates liability, or promotes illegal activities;
+              impersonate any person or entity, or misrepresent him or herself
+              or any affiliation with any person or entity; promote software or
+              services that delivers unsolicited email or contains viruses,
+              Trojan horses, worms, time bombs, or other harmful programming
+              routines or computer code; engage in any systematic retrieval of
+              content or information from the Site to create or compile,
+              directly or indirectly, a collection, compilation, database, or
+              directory, whether through the use of robots, spiders, automatic
+              devices or manual processes; solicit personal information from
+              anyone under the age of 18; post the personal information of
+              another person without that person's permission; or use another
+              User's account or modify or remove another User's User Submissions
+              without their permission.
+            </p>
+            <p className="terms">
+              eCalenda agrees not to prescreen User Submissions and does not
+              guarantee that the Site will be free from offensive, inaccurate,
+              unlawful or otherwise objectionable User Submissions. eCalenda
+              expressly disclaims any liability in connection with User
+              Submissions; assumes no responsibility for, or any obligation to
+              monitor or remove, User Submissions; assumes no responsibility for
+              any action or inaction taken in regards to offensive content or
+              User Submissions on the Site; reserves the right to restrict any
+              User's access to the Site and to edit, remove, or refuse to post
+              any User Submissions or terminate User accounts for any or no
+              reason. This includes, without limitation, User Submissions that
+              may be harmful to others or if User has engaged in harassment of
+              eCalenda service providers. Users may immediately notify eCalenda
+              of any objectionable User Submissions appearing on the Site, but
+              eCalenda makes no promise that it will edit or remove any specific
+              User Submissions.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Accuracy of Information</h4>
+            <p className="terms">
+              Although eCalenda's webmaster updates information on the Site
+              periodically, eCalenda does not offer assurance that the
+              information or material is error-free or complete. Such updates
+              include but are not limited to availability and price. eCalenda
+              reserves the right to revise or change information on the Site
+              without prior notice. Although we apologize for the inconvenience,
+              eCalenda reserves the right to correct any information at any
+              time, even during User transactions, and will take measures that
+              may include refusal, cancellation, or revision to adjust Users
+              final payment. All prices are available for limited time only, and
+              eCalenda reserves the right to change any price without notice.
+              Current promotions, sales, and discounts are not valid towards
+              previously purchased service. In the event where eCalenda's cost
+              to provide service (namely SMS and Email) exceeds the revenue
+              derived from the Customer, eCalenda reserves the right to cancel,
+              revise, modify pricing, or refuse service.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Third Party Links and Content</h4>
+            <p className="terms">
+              Links and references to and from third party websites are provided
+              for convenience only. eCalenda does not expressly or implicitly
+              endorse any information, materials, or services offered on third
+              party sites, nor their accessibility or security. eCalenda does
+              not assume any responsibility or liability for third party sites,
+              nor does eCalenda make any representation or warranties for or
+              with respect to these sites. No User may provide links to
+              eCalenda's website without prior written permission from
+              eCalenda's webmaster. To request such permission, contact{" "}
+              <a className="text-brandcolor" href="mailto:help@eCalenda.com">
+                help@eCalenda.com.
+              </a>{" "}
+              eCalenda and its service providers do not guarantee the accuracy
+              or completeness of the Site's content. eCalenda does not assume
+              responsibility or liability for third party content on the Site.
+              Vendors of eCalenda may furnish certain information available to
+              the User, including certain product data and opinions, and thus
+              User agrees to indemnify eCalenda service providers and affiliates
+              against all losses or damages resulting in User's reliance on any
+              information, opinion, or advice obtained through the Site.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Termination</h4>
+            <p className="terms">
+              eCalenda reserves the right, in its sole discretion, to terminate
+              any User account and any User Submissions, and restrict User's
+              access to all or any part of the Site, for any or no reason,
+              without notice, and without liability to any User or anyone else.
+              These Terms of Use are applicable to any User who accesses,
+              registers, or purchases anything on the Site. The terms of
+              Termination; Indemnity; Copyright and Trademark Disclaimer;
+              Limitation of Liability and Disclaimer of Warranties; and
+              Governing Law sections will survive any termination of service or
+              use of the Site.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Indemnity</h4>
+            <p className="terms">
+              User agrees to indemnify eCalenda and its service providers and
+              affiliates against all losses or damages, including reasonable
+              attorney's fees, resulting from or relating in any way to his or
+              her User Submissions, use of the Site, any violation of this
+              Agreement, Privacy Policy, the DPA, any law, or the rights of any
+              third party, or any activity on the User's account by another
+              third party.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Copyright and Trademark Disclaimer</h4>
+            <p className="terms">
+              The Site is owned by eCalenda and is available for Users personal
+              and commercial purposes. The eCalenda name, logo, and site
+              content, including all pictures, slogans, text, colors, designs,
+              graphics, images, icons, buttons, code, and software, are all
+              subject to trademark, copyright, and other applicable intellectual
+              property rights and law. Third-party trademarks, product names,
+              and logos on the Site are the property of their respective owners.
+              eCalenda retains sole rights for all use, production, and copy of
+              its trademarks, and any misuse is strictly prohibited. eCalenda
+              trademarks may not be copied, reproduced, modified, downloaded,
+              published, exploited, or transmitted without first obtaining
+              written permission from eCalenda. Permission is only granted to
+              electronically copy and print pages from the Site solely as
+              related to the non-commercial placement of User's personal order
+              from eCalenda. eCalenda retains all intellectual property rights,
+              copyrights, and trademarks for any material that User prints for
+              personal use. User agrees to respect all applicable intellectual
+              property laws and not use any materials on the Site to create new
+              works. User agrees to not use, copy, or distribute any of the
+              content, including User Generated Content, other than expressly
+              permitted, for any commercial purpose. User warrants that he or
+              she owns all rights in any User Submissions posted to the Site.
+              User agrees not to post, modify, distribute, or reproduce User
+              Submissions that belong to another person, without first obtaining
+              the owner's permission to post such User Submissions and grant to
+              eCalenda all of the license rights granted in this Agreement.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">
+              Limitation of Liability and Disclaimer of Warranties
+            </h4>
+            <p className="terms">
+              eCalenda provides the site “as is” and does not claim to make any
+              warranties, express or implied, about the serviceability,
+              merchantability, fitness for a particular purpose, or content of
+              the site. eCalenda further does not warrant that its site or
+              applicable server is free from viruses or other potentially
+              harmful code. Neither eCalenda nor any of its service providers
+              shall be liable for any claims arising from any use or inability
+              to use products or services, privacy law violations, data
+              breaches, the conduct of other site users, malfunctions or defects
+              in the site, lack of privacy or security when using the site, for
+              any delay in or lack of delivery, for any loss of profits, data,
+              or business, for user or any third party, as permissible under all
+              applicable law. If applicable law does not permit such an
+              exclusion of liability for incidental, special, or consequential
+              damages, eCalenda’s liability shall be limited to the maximum
+              extent permitted by applicable law. User agrees to indemnify and
+              hold harmless eCalenda and its service providers from damages, and
+              neither party will be liable for any indirect, incidental,
+              special, consequential or any damages whatsoever (including, but
+              not limited to, damage caused by lost profits, loss of business
+              opportunity, lost data, computer viruses, business interruption,
+              lost revenue, or loss of goodwill) for any cause of action,
+              whether in contract, tort, strict liability, or otherwise, arising
+              out of or related to this agreement or a breach thereof. In no
+              event shall eCalenda be liable for damages in excess of the price
+              charged to user for user's order. This limitation shall not apply
+              to death or personal injury to the extent that applicable law
+              prohibits such limitation. eCalenda reserves the right to change
+              or discontinue at any time any aspect or feature of this site.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">PRIVACY</h4>
+            <p className="terms">
+              eCalenda is not currently HIPAA compliant. Users are solely
+              responsible for compliance with HIPAA, HITECH, and similar data
+              protection and privacy laws. For purposes of this Agreement,
+              “HIPAA” means the Health Insurance Portability and Accountability
+              Act of 1996, as amended, and “HITECH” means the Health Information
+              Technology for Economic and Clinical Health Act, enacted as part
+              of the American Recovery and Reinvestment Act of 2009, as amended.
+            </p>
+            <p className="terms">
+              This Agreement herein incorporates by reference the DPA when GDPR
+              applies to the use of the Site. The parties agree that the DPA
+              replaces and supersedes in its entirety any previously agreed data
+              processing addendum between you and eCalenda relating to the EU
+              Directive 95/46/EC.
+            </p>
+            <p className="terms">
+              eCalenda and its affiliates will handle any Personal Data (as
+              defined in the DPA) relating to the personnel of User, User’s
+              affiliates and third parties acting on behalf of User (together,
+              “Personnel”) that is provided to eCalenda, its affiliates or third
+              parties acting on the behalf of eCalenda for the purposes of this
+              Agreement in accordance with the handling practices described in
+              the Privacy Policy. User consents, and will ensure that the
+              Personnel to whom such Personal Data relates consent, to the
+              collection, storage, use, disclosure and processing of Personal
+              Data of the Personnel by eCalenda, its affiliates and third
+              parties acting on eCalenda’s behalf in accordance with the Privacy
+              Policy for the purposes of this Agreement, including without
+              limitation to provide the Site to, or to communicate with, User
+              and its Personnel. User represents and warrants that it is
+              entitled in accordance with applicable laws to provide such
+              Personal Data to eCalenda, its affiliates and third parties acting
+              on eCalenda’s behalf for the purposes of this Agreement. User
+              acknowledges, and will ensure that the Personnel to whom such
+              Personal Data relates are aware, that the Personal Data may be
+              transferred to other countries outside the domicile of User or its
+              Personnel, and that the protections afforded Personal Data under
+              applicable laws and regulations may not be comparable or as
+              protective as such data is protected in their domicile.
+            </p>
+            <p className="terms">
+              For purposes of this Agreement (1) “GDPR” means the General Data
+              Protection Regulation (“GDPR”) (Regulation (EU) 2016/679), and (2)
+              “Personal Data” means any information relating to an identified or
+              identifiable natural person; an identified or identifiable natural
+              person is one who can be identified, directly or indirectly,
+              including without limitation by reference to an identifier.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Governing Law</h4>
+            <p className="terms">
+              The Site is controlled and operated by eCalenda in Multnomah
+              County, Oregon, United States of America. eCalenda makes no claim
+              that the Site, its services, are appropriate or accessible to
+              other locations. User accesses the Site on her/his own initiative,
+              accepts and agrees to be bound by the terms of the Agreement, the
+              Privacy Policy, and the DPA, and submits to the jurisdiction and
+              venue in the state or federal courts located in Oregon. This
+              agreement shall be governed by the laws of the State of Oregon
+              without giving effect to its conflicts of law principles. The
+              provisions of this Agreement will be deemed severable, and the
+              invalidity or unenforceability of any provision will not affect
+              the validity or enforceability of any other provision.
+            </p>
+          </article>
+          <article>
+            <h4 className="subheader">Copyright and Trademark Disclaimer</h4>
+            <p className="terms">
+              If you have any questions about these Terms or otherwise need to
+              contact us for any reason, you can reach us at{" "}
+              <a className="text-brandcolor" href="mailto:privacy@eCalenda.com">
+                privacy@eCalenda.com.
+              </a>
+            </p>
+          </article>
         </div>
-      </section>
+      </div>
     </>
   );
 }
