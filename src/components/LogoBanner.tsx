@@ -7,8 +7,8 @@ export default function LogoBanner() {
       <div className="hidden sm:block text-xl text-center mx-auto w-2/3 mb-10 -mt-10 text-app-color-500 dark:text-app-color-300 capitalize">
         the ultimate buiness solution for time management and resources
         allocation.
-        <br />A Cloud-based web app to manage all your time-related events
-        safely and in one place.
+        {/* <br />A Cloud-based web app to manage all your time-related events
+        safely and in one place. */}
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 export default function PagePrivacy() {
   return (
     <>
-      <div className="mx-16 my-10 modal-content">
+      <div className="mx-16 my-32 modal-content">
         <div className=" header">
           <div className="">
             <h3 className="font-bold text-[40px] dark:text-app-color-100 text-app-color-700 text-center mt-30 mb-10">
@@ -668,16 +668,6 @@ export default function PagePrivacy() {
             <h2 className="subheader" id="hipaa-compliance">
               About HIPAA Compliance
             </h2>
-            <p className="terms">
-              If you are subject to HIPAA, learn more about{" "}
-              <a
-                className="text-brandcolor"
-                href="https://support.eCalenda.com/en/articles/3833495-eCalenda-health"
-              >
-                eCalenda Health
-              </a>
-              .
-            </p>
           </article>
           <article className="lg:maxw-lg mx-auto">
             <h2 className="subheader" id="contact-us">

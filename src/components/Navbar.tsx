@@ -10,29 +10,30 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
 
   const [navOpen, setNavOpen] = useState<boolean>(false);
 
-  const scrollToPlans = () => {
-    document
-      .querySelector("#plans")
-      ?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-  const scrollToFeatures = () => {
-    document
-      .querySelector("#features-section")
-      ?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+  // const scrollToPlans = () => {
+  //   document
+  //     .querySelector("#plans")
+  //     ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  // };
+  // const scrollToFeatures = () => {
+  //   document
+  //     .querySelector("#features-section")
+  //     ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  // };
 
   const swapDark = () => {
+    localStorage.setItem("darkMode", !darkMode ? "dark" : "light");
     darkModeHandler((prev) => !prev);
   };
-  const scrollToTop = () => {
-    window.location.pathname === "/"
-      ? window.scrollTo({ top: 0, behavior: "smooth" })
-      : (window.location.href = "/");
-  };
+  // const scrollToTop = () => {
+  //   window.location.pathname === "/"
+  //     ? window.scrollTo({ top: 0, behavior: "smooth" })
+  //     : (window.location.href = "/");
+  // };
 
-  const toggleNav = () => {
-    setNavOpen((prev) => !prev);
-  };
+  // const toggleNav = () => {
+  //   setNavOpen((prev) => !prev);
+  // };
   return (
     <>
       {/* <pre slot="react" style={{ marginBottom: "0px", marginTop: "0px" }} /> */}
@@ -41,7 +42,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
         <div className="flex-1">
           <a
             className="btn btn-ghost normal-case text-xl text-app-color-500 dark:text-app-color-100"
-            onClick={scrollToTop}
+            // onClick={scrollToTop}
           >
             eCalenda
           </a>
@@ -55,7 +56,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
           >
             <li>
               <a
-                onClick={scrollToFeatures}
+                // onClick={scrollToFeatures}
                 className="text-app-color-500 dark:text-app-color-100"
               >
                 Features
@@ -63,7 +64,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
             </li>
             <li>
               <a
-                onClick={scrollToPlans}
+                // onClick={scrollToPlans}
                 className="text-app-color-500 dark:text-app-color-100"
               >
                 Plans
@@ -151,7 +152,10 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
           </ul>
 
           <div className="flex-none sm:hidden">
-            <button className="btn btn-square btn-ghost" onClick={toggleNav}>
+            <button
+              className="btn btn-square btn-ghost"
+              //  onClick={toggleNav}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

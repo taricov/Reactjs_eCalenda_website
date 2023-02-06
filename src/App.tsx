@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import FeatureCard from "./components/FeatureCard";
+import FeatureCard from "./components/ComingSoon";
 import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 import FeatureSection from "./layout/FeatureSection";
@@ -34,6 +34,7 @@ import PageTestimonails from "./pages/PageTestimonials";
 import PageHowTo from "./pages/PageHowTo";
 import PageTeam from "./pages/PageTeam";
 import PagePrivacy from "./pages/PagePrivacy";
+import AppCookiesPopover from "./components/AppCookiesPopover";
 
 // const router = createBrowserRouter([
 //   {
@@ -52,7 +53,8 @@ import PagePrivacy from "./pages/PagePrivacy";
 //   },
 // ]);
 function App() {
-  const [isDark, setDark] = useState<boolean>(true);
+  const darkMode = localStorage.getItem("darkMode") === "dark" ? true : false;
+  const [isDark, setDark] = useState<boolean>(darkMode);
   // document.querySelector("body")?.classList.add()
   // const [count, setCount] = useState(0);
   const darkModeBGClasses = [
@@ -75,11 +77,13 @@ function App() {
       document.body.classList.add(...lightModeBGClasses);
     }
   }, [isDark]);
+
   return (
     <div className={`App  ${isDark ? "dark" : "light"}`}>
       {/* <AppHeader /> */}
       <LogoBanner />
       <Navbar darkMode={isDark} darkModeHandler={setDark} />
+      <AppCookiesPopover />
       <Router>
         <Routes>
           <Route path="/" element={<PageHome />} />

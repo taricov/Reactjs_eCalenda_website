@@ -25,6 +25,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.7.0",
     "react-social-login": "^3.4.16",
+    "react-type-animation": "^2.1.2",
     "scrollreveal": "^4.0.9"
   },
   "devDependencies": {

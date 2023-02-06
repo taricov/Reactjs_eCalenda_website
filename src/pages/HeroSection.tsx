@@ -1,14 +1,42 @@
+import { TypeAnimation } from "react-type-animation";
+
 export default function HeroSection() {
   return (
     <section>
       <div className="">
-        <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 ">
+        <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-20 md:py-32 md:px-10 lg:px-32 ">
           <h1 className="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl text-app-color-700 dark:text-app-color-200">
-            Provident blanditiis cum exercitationem
+            <TypeAnimation
+              sequence={[
+                "eCalenda",
+                3000,
+                "Draggable.",
+                1000,
+                "Taggable.",
+                1000,
+                "Extendible.",
+                1000,
+                "Searchable.",
+                1000,
+                // () => {},
+              ]}
+              wrapper="div"
+              cursor={true}
+              repeat={Infinity}
+              style={{ fontSize: "2em" }}
+            />
+            {/* Draggable.
+            <br />
+            Taggable.
+            <br />
+            Extendible.
+            <br />
+            Searchable.
+            <br /> */}
           </h1>
           <p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-app-color-700 dark:text-app-color-200">
-            Cupiditate minima voluptate temporibus quia? Architecto beatae esse
-            ab amet vero eaque explicabo!
+            A Cloud-Based Web App To Manage All Your Time-Related Events Safely
+            And In One Place.
           </p>
           <div className="flex flex-wrap justify-center">
             <a

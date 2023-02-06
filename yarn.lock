@@ -1641,6 +1641,11 @@ react-social-login@^3.4.16:
     webpack-cli "^4.10.0"
     whatwg-fetch "2.0.3"
 
+react-type-animation@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-type-animation/-/react-type-animation-2.1.2.tgz#9a67c87e8e7a5e4ca3411e30cd2fa308365307a4"
+  integrity sha512-6/t4Whl87sLR0c8kzvJngTrCV6OVy3jEeUZoe2svVu9VaYr951VD7OeUie1rIyeD8JfpBIqZGYrPFHZQ04XHrw==
+
 "react@^16 || ^17":
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"

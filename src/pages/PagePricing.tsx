@@ -3,11 +3,11 @@ import { useState } from "react";
 const prices = [
   {
     basic: { m: 4, y: 2 },
-    startup: { m: 5, y: 7 },
+    startup: { m: 19, y: 14 },
   },
 ];
 const ItemListChecked = ({ ...props }) => (
-  <li className=" flex items-center space-x-2">
+  <li className=" flex items-start space-x-2">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
@@ -21,7 +21,7 @@ const ItemListChecked = ({ ...props }) => (
         clipRule="evenodd"
       ></path>
     </svg>
-    <span className="transition-all duration-200 group-hover:text-white dark:group-hover:text-white">
+    <span className="transition-all duration-200 group-hover:text-white capitalize dark:group-hover:text-white">
       {props.title}
     </span>
   </li>
@@ -59,24 +59,30 @@ export default function PagePricing() {
               <div className=" flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
                 <div className="flex flex-col p-6 space-y-6 rounded shadow sm:p-8 text-app-color-700 dark:text-app-color-100 dark:bg-app-color-900 bg-app-color-100">
                   <div className="space-y-2">
-                    <h4 className="text-2xl font-bold">Beginner</h4>
+                    <h4 className="text-2xl font-bold">Starter</h4>
                     <span className="text-6xl font-bold">Free</span>
                   </div>
-                  <p className="mt-3 leading-relaxed dark:text-app-color-200 text-app-color-700">
-                    Etiam ac convallis enim, eget euismod dolor.
+                  <p className="leading-relaxed dark:text-app-color-200 text-app-color-700">
+                    <span className="font-bold px-2 py-1 dark:bg-app-color-100 dark:bg-opacity-60 dark:text-app-color-800 bg-app-color-700 bg-opacity-80 text-app-color-100 rounded">
+                      You are:
+                    </span>{" "}
+                    A company/individual who wants to try eCalenda and
+                    experience how easy could your work be.
                   </p>
                   <ul className="flex-1 mb-6 flex-col space-y-2 dark:text-app-color-300 text-app-color-700">
-                    <ItemListChecked title="lorem ipsum fefe" />
-                    <ItemListChecked title="lorem ipsum fefe" />
-                    <ItemListChecked title="lorem ipsum fefe" />
-                    <ItemListChecked title="lorem ipsum fefe" />
+                    <ItemListChecked title="Up to 50  events" />
+                    <ItemListChecked
+                      title={<div>elect and vote for new features</div>}
+                    />
+                    <ItemListChecked title="All Free Updates." />
+                    <ItemListChecked title="Limited support" />
                   </ul>
                   <button
                     type="button"
                     className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-app-color-200 bg-app-color-700 dark:text-app-color-900 text-app-color-100
                     dark:hover:bg-app-color-100 dark:hover:-translate-y-1 hover:-translate-y-1 hover:bg-app-color-600 transition-all duration-400"
                   >
-                    Get Started
+                    Start Now
                   </button>
                 </div>
               </div>
@@ -90,14 +96,28 @@ export default function PagePricing() {
                       <span className="text-sm tracking-wide">/month</span>
                     </span>
                   </div>
-                  <p className="leading-relaxed">
-                    Morbi cursus ut sapien sit amet consectetur.
+                  <p className="leading-relaxed text-app-color-200 dark:text-app-color-700">
+                    <span className="font-bold px-2 py-1 bg-app-color-100 bg-opacity-60 text-app-color-800 dark:bg-app-color-700 dark:bg-opacity-80 dark:text-app-color-100 rounded">
+                      You are:
+                    </span>{" "}
+                    A company that tried eCalenda and found one or more of its
+                    provided solutions perfectly work for your use cases.
                   </p>
                   <ul className="flex-1 space-y-2">
-                    <ItemListChecked title="lorem ipsum fefe" />
-                    <ItemListChecked title="lorem ipsum fefe" />
-                    <ItemListChecked title="lorem ipsum fefe" />
-                    <ItemListChecked title="lorem ipsum fefe" />
+                    <ItemListChecked title="Up to 300 events a month per user" />
+                    <ItemListChecked
+                      title={
+                        <div>
+                          All{" "}
+                          <a className="underline" href="/features">
+                            Premium Features
+                          </a>
+                        </div>
+                      }
+                    />
+                    <ItemListChecked title="Over 5 use cases available" />
+                    <ItemListChecked title="first to get the upcoming updates" />
+                    <ItemListChecked title="Support Priority" />
                   </ul>
                   <a
                     rel="noopener noreferrer"
@@ -112,20 +132,31 @@ export default function PagePricing() {
               <div className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
                 <div className="p-6 space-y-6 rounded shadow sm:p-8 dark:bg-app-color-900 bg-app-color-100">
                   <div className="space-y-2">
-                    <h4 className="text-2xl font-bold">Team</h4>
+                    <h4 className="text-2xl font-bold">Enterprise</h4>
                     <span className="text-6xl font-bold">
                       Custom
                       {/* <span className="text-sm tracking-wide">/month</span> */}
                     </span>
                   </div>
                   <p className="leading-relaxed dark:text-app-color-200 text-app-color-700">
-                    Phasellus ultrices bibendum nibh in vehicula.
+                    <span className="font-bold px-2 py-1 dark:bg-app-color-100 dark:bg-opacity-60 dark:text-app-color-800 bg-app-color-700 bg-opacity-80 text-app-color-100 rounded">
+                      You are:
+                    </span>{" "}
+                    A company that likes eCalenda and would ask to customize it
+                    further to your business needs.
                   </p>
+                  <ul className="ml-6 !mt-3 leading-relaxed dark:text-app-color-200 text-app-color-700 text-center">
+                    <li>
+                      Unleash what could be possible by picking up a meeting
+                      time from <b>Contact Us</b> below to discuss your specail
+                      workflow
+                    </li>
+                  </ul>
                   <ul className="space-y-2 dark:text-app-color-300 text-app-color-700">
+                    {/* <ItemListChecked title="Full customization " />
+                    <ItemListChecked title="All possibilities" />
                     <ItemListChecked title="lorem ipsum fefe" />
-                    <ItemListChecked title="lorem ipsum fefe" />
-                    <ItemListChecked title="lorem ipsum fefe" />
-                    <ItemListChecked title="lorem ipsum fefe" />
+                    <ItemListChecked title="lorem ipsum fefe" /> */}
                   </ul>
                   <a
                     rel="noopener noreferrer"

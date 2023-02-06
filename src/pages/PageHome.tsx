@@ -9,7 +9,8 @@ import { Fade } from "react-awesome-reveal";
 import PagePricing from "./PagePricing";
 import IframeEmbed from "../components/IframeEmbed";
 import { useEffect, useState } from "react";
-import FeatureCard2 from "../components/FeatureCard2";
+import FeatureCard2 from "../components/FeatureCard";
+import ComingSoonCard from "../components/ComingSoonCard";
 
 export default function PageHome() {
   // const [iframeOn, setIframe] = useState<boolean>(true);
@@ -38,8 +39,35 @@ export default function PageHome() {
       <HeroSection />
       <SectionTitle dataGhost="" title="Features" id="features-section" />
       <FeatureSection>
-        <FeatureCard2 />
         <FeatureCard
+          title="New Features"
+          desc="Disrupt inspire and think tank, social entrepreneur but preliminary
+          thinking think tank compelling. Inspiring, invest synergy capacity
+          building, white paper; silo, unprecedented challenge B-corp
+          problem-solvers."
+        />
+        <FeatureCard
+          title="New Features"
+          desc="Disrupt inspire and think tank, social entrepreneur but preliminary
+          thinking think tank compelling. Inspiring, invest synergy capacity
+          building, white paper; silo, unprecedented challenge B-corp
+          problem-solvers."
+        />
+        <FeatureCard
+          title="New Features"
+          desc="Disrupt inspire and think tank, social entrepreneur but preliminary
+          thinking think tank compelling. Inspiring, invest synergy capacity
+          building, white paper; silo, unprecedented challenge B-corp
+          problem-solvers."
+        />
+        <FeatureCard
+          title="New Features"
+          desc="Disrupt inspire and think tank, social entrepreneur but preliminary
+          thinking think tank compelling. Inspiring, invest synergy capacity
+          building, white paper; silo, unprecedented challenge B-corp
+          problem-solvers."
+        />
+        {/* <FeatureCard
           title="Audio Unit Hosting"
           desc="Host your favourite Audio Units from your Library, chain them together with eqMac effects! No more setup hassles."
           iconName={"dynamic_feed"}
@@ -59,25 +87,25 @@ export default function PageHome() {
           iconName={"dynamic_feed"}
           type="free"
           votes={242}
-        />
+        /> */}
       </FeatureSection>
       <SectionTitle dataGhost="SOON" title="Coming Soon" id="coming-soon" />
       <FeatureSection>
-        <FeatureCard
+        <ComingSoonCard
           title="Audio Unit Hosting"
           desc="Host your favourite Audio Units from your Library, chain them together with eqMac effects! No more setup hassles."
           iconName={"dynamic_feed"}
           type="pro"
           votes={242}
         />
-        <FeatureCard
+        <ComingSoonCard
           title="Audio Unit Hosting"
           desc="Host your favourite Audio Units from your Library, chain them together with eqMac effects! No more setup hassles."
           iconName={"dynamic_feed"}
           type="startup"
           votes={-2}
         />
-        <FeatureCard
+        <ComingSoonCard
           title="Audio Unit Hosting"
           desc="Host your favourite Audio Units from your Library, chain them together with eqMac effects! No more setup hassles."
           iconName={"dynamic_feed"}

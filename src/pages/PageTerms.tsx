@@ -1,7 +1,7 @@
 export default function PageTerms() {
   return (
     <>
-      <div className="mx-16 modal-content">
+      <div className="mx-16 my-32 modal-content">
         <div className=" header">
           <div className="">
             <h3 className="font-bold text-[40px] dark:text-app-color-100 text-app-color-700 text-center mt-30 mb-10">
@@ -132,7 +132,7 @@ export default function PageTerms() {
               sub-pages, which are available for review here:{" "}
               <a
                 className="text-brandcolor"
-                href="https://www.eCalenda.com/pricing"
+                href="https://www.eCalenda.com/plans"
                 target="_blank"
               >
                 {" "}
