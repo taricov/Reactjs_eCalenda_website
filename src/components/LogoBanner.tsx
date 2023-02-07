@@ -1,6 +1,11 @@
+import AppLogo from "./AppLogo";
+
 export default function LogoBanner() {
   return (
     <>
+      {/* <div className="">
+        <AppLogo />
+      </div> */}
       <h1 className="hidden sm:block lg:text-[200px] text-[140px] text-center text-app-color-500 dark:text-app-color-200">
         eCalenda
       </h1>

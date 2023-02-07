@@ -36,10 +36,11 @@ export default function IframeEmbed({ isOpen, setIsOpen, embedID }: any) {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-ful transform overflow-hidden rounded mx-auto shadow-xl transition-all">
+                <Dialog.Panel className="w-full h-full transform overflow-hidden rounded mx-auto shadow-xl transition-all">
                   <iframe
-                    width="853"
-                    height="480"
+                    // width="853"
+                    // height="480"
+                    className="w-full h-[480px]"
                     src={`https://www.youtube.com/embed/${embedID}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

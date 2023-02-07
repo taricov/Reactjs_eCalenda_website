@@ -66,7 +66,7 @@ export default function PagePricing() {
                     <span className="font-bold px-2 py-1 dark:bg-app-color-100 dark:bg-opacity-60 dark:text-app-color-800 bg-app-color-700 bg-opacity-80 text-app-color-100 rounded">
                       You are:
                     </span>{" "}
-                    A company/individual who wants to try eCalenda and
+                    A company or individual who wants to try eCalenda and
                     experience how easy could your work be.
                   </p>
                   <ul className="flex-1 mb-6 flex-col space-y-2 dark:text-app-color-300 text-app-color-700">
