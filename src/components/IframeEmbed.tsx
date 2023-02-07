@@ -1,52 +1,56 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment } from "react";
 
-const IframeEmbed = ({ embedId }: any) => (
-  <>
-    {/* <label htmlFor="my-modal-4" className="btn">
-      open modal
-    </label> */}
+export default function IframeEmbed({ isOpen, setIsOpen, embedID }: any) {
+  function closeModal() {
+    setIsOpen(false);
+  }
 
-    <input type="checkbox" id="my-modal-4" className="modal-toggle" />
-    <label htmlFor="my-modal-4" className="modal cursor-pointer">
-      <label className="modal-box relative" htmlFor="">
-        {/* <IframeEmbed embedId="" /> */}
-        <iframe
-          width="853"
-          height="480"
-          src={`https://www.youtube.com/embed/${embedId}`}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="Embedded youtube"
-        />
-      </label>
-    </label>
-  </>
+  function openModal() {
+    setIsOpen(true);
+  }
+  return (
+    <>
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
 
-  // <div
-  //   className="bg-black bg-opacity-80 z-30 w-screen h-screen absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center"
-  //   onClick={iframeSetter}
-  // >
-  //   <div className="w-[80%] mx-auto">
-  //     {/* <IframeEmbed embedId="" /> */}
-  //     <div className="video-responsive">
-  //       <iframe
-  //         width="853"
-  //         height="480"
-  //         src={`https://www.youtube.com/embed/${embedId}`}
-  //         frameBorder="0"
-  //         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  //         allowFullScreen
-  //         title="Embedded youtube"
-  //       />
-  //     </div>
-  //   </div>
-  // </div>
-);
-
-IframeEmbed.propTypes = {
-  embedId: PropTypes.string.isRequired,
-};
-
-export default IframeEmbed;
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-ful transform overflow-hidden rounded mx-auto shadow-xl transition-all">
+                  <iframe
+                    width="853"
+                    height="480"
+                    src={`https://www.youtube.com/embed/${embedID}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Embedded youtube"
+                  />
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
+    </>
+  );
+}

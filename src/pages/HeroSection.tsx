@@ -1,10 +1,15 @@
+import { Dialog } from "@headlessui/react";
+import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
+import IframeEmbed from "../components/IframeEmbed";
 
 export default function HeroSection() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <section>
       <div className="">
-        <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-20 md:py-32 md:px-10 lg:px-32 ">
+        <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-48 md:py-32 md:px-10 lg:px-32 ">
           <h1 className="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl text-app-color-700 dark:text-app-color-200">
             <TypeAnimation
               sequence={[
@@ -25,14 +30,6 @@ export default function HeroSection() {
               repeat={Infinity}
               style={{ fontSize: "2em" }}
             />
-            {/* Draggable.
-            <br />
-            Taggable.
-            <br />
-            Extendible.
-            <br />
-            Searchable.
-            <br /> */}
           </h1>
           <p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-app-color-700 dark:text-app-color-200">
             A Cloud-Based Web App To Manage All Your Time-Related Events Safely
@@ -55,13 +52,16 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <label
+
+      <IframeEmbed isOpen={isOpen} setIsOpen={setIsOpen} embedID="grdg" />
+
+      <div
         className="group w-5/6 mx-auto mb-12 -mt-20 rounded-lg lg:-mt-40 dark:bg-gray-500 relative hover:opacity-70 transition-all duration-500 cursor-pointer shadow-2xl hover:-translate-y-1"
-        htmlFor="my-modal-4"
+        // htmlFor="my-modal-4"
+        onClick={() => setIsOpen(true)}
       >
-        {/* <IframeEmbed embedId="rokGy0huYEA" /> */}
-        <div className="w-4/5 mx-auto">
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-full bg-app-color-900 bg-opacity-40"></div>
+        <div className="w-full">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-app-color-900 bg-opacity-40"></div>
           <button
             type="button"
             className="transition duration-500 group-hover:scale-110 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-app-color-700 bg-app-color-700 dark:bg-app-color-100 shadow-xl rounded-3xl outline-none px-4 py-1 w-fit flex items-center justify-center"
@@ -89,13 +89,7 @@ export default function HeroSection() {
             alt=""
           />
         </div>
-      </label>
-
-      {/* <img
-        src="https://source.unsplash.com/random/480x320"
-        alt=""
-        className="w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 dark:bg-gray-500"
-      /> */}
+      </div>
     </section>
   );
 }

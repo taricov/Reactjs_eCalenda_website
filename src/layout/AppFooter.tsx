@@ -24,9 +24,12 @@ export default function AppFooter() {
               <rect x="14" y="1" width="7" height="6" />
               <rect x="14" y="11" width="7" height="12" />
             </svg>
-            <span className="ml-2 text-xl font-bold tracking-wide text-app-color-800 dark:text-app-color-100 uppercase">
+            <a
+              href="/about"
+              className="ml-2 text-xl font-bold tracking-wide text-app-color-800 dark:text-app-color-100 uppercase"
+            >
               About Us
-            </span>
+            </a>
           </a>
           <div className="mt-4 lg:max-w-sm">
             <p className="text-sm text-app-color-800 dark:text-app-color-100">
@@ -48,7 +51,7 @@ export default function AppFooter() {
             <ul className="mt-2 space-y-2">
               <li>
                 <a
-                  href="/"
+                  href="/about"
                   className="text-app-color-700 dark:text-app-color-200 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
                 >
                   About Us
@@ -252,7 +255,7 @@ export default function AppFooter() {
         </p>
         <div className="flex items-center mt-4 space-x-4 sm:mt-0">
           <a
-            href="/"
+            href="#"
             className="text-app-color-400 dark:text-app-color-100 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -260,7 +263,7 @@ export default function AppFooter() {
             </svg>
           </a>
           <a
-            href="/"
+            href="#"
             className="text-app-color-400 dark:text-app-color-100 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
           >
             <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -269,7 +272,7 @@ export default function AppFooter() {
             </svg>
           </a>
           <a
-            href="/"
+            href="#"
             className="text-app-color-400 dark:text-app-color-100 dark:hover:text-opacity-50  transition-colors duration-300 hover:text-app-color-500"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">

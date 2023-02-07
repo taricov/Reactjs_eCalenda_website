@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import FeatureCard from "./components/ComingSoon";
+import FeatureCard from "./components/ComingSoonCard";
 import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 import FeatureSection from "./layout/FeatureSection";
@@ -35,6 +35,11 @@ import PageHowTo from "./pages/PageHowTo";
 import PageTeam from "./pages/PageTeam";
 import PagePrivacy from "./pages/PagePrivacy";
 import AppCookiesPopover from "./components/AppCookiesPopover";
+import PageAbout from "./pages/PageAbout";
+import PageIntegrations from "./pages/PageIntegrations";
+import PageTutorial from "./pages/PageTutorial";
+import PageComingSoon from "./pages/PageComingSoon";
+import PageMeeting from "./pages/PageMeeting";
 
 // const router = createBrowserRouter([
 //   {
@@ -83,6 +88,7 @@ function App() {
       {/* <AppHeader /> */}
       <LogoBanner />
       <Navbar darkMode={isDark} darkModeHandler={setDark} />
+
       <AppCookiesPopover />
       <Router>
         <Routes>
@@ -97,11 +103,11 @@ function App() {
           <Route path="/api-docs" element={<PageApiDocs />} />
           <Route path="/latest-updates" element={<PageUpdates />} />
           <Route path="/help-center" element={<PageHelpCenter />} />
-          {/* <Route path="/upcoming-features" element={<PageHelpCenter />} /> */}
-          {/* <Route path="/about" element={<PageHelpCenter />} /> */}
-          {/* <Route path="/tutorial" element={<PageHelpCenter />} /> */}
-          {/* <Route path="/integrations" element={<PageHelpCenter />} /> */}
-          <Route path="/meeting" element={<PageHowTo />} />
+          <Route path="/upcoming-features" element={<PageComingSoon />} />
+          <Route path="/about" element={<PageAbout />} />
+          <Route path="/tutorial" element={<PageTutorial />} />
+          <Route path="/integrations" element={<PageIntegrations />} />
+          <Route path="/meeting" element={<PageMeeting />} />
           <Route path="/how-to" element={<PageHowTo />} />
           <Route path="/team" element={<PageTeam />} />
           <Route path="/privacy" element={<PagePrivacy />} />

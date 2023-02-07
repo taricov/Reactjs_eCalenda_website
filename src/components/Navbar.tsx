@@ -31,9 +31,9 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
   //     : (window.location.href = "/");
   // };
 
-  // const toggleNav = () => {
-  //   setNavOpen((prev) => !prev);
-  // };
+  const toggleNav = () => {
+    setNavOpen((prev) => !prev);
+  };
   return (
     <>
       {/* <pre slot="react" style={{ marginBottom: "0px", marginTop: "0px" }} /> */}
@@ -43,6 +43,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
           <a
             className="btn btn-ghost normal-case text-xl text-app-color-500 dark:text-app-color-100"
             // onClick={scrollToTop}
+            href="/"
           >
             eCalenda
           </a>
@@ -50,7 +51,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
 
         <div className="flex-none">
           <ul
-            className={`menu sm:menu-horizontal px-1 sm:relative sm:left-0 sm:top-0 sm:translate-x-0 sm:bg-transparent sm:w-0 space-x-1 absolute left-1/2 ${
+            className={`menu sm:menu-horizontal px-1 sm:relative sm:left-0 sm:top-0 sm:translate-x-0 sm:bg-transparent dark:!bg-app-color-900 !bg-app-color-100 sm:w-0 space-x-1 absolute left-1/2 ${
               navOpen ? "top-14" : "-top-96"
             } -translate-x-1/2 transition-all duration-200 ease-in-out bg-app-color-800 rounded w-screen sm:block sm:px-1 z-10 shadow-xl sm:shadow-none`}
           >
@@ -107,30 +108,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
                 Sign In
               </a>
             </li>
-            {/* <li tabIndex={0}>
-              <a>
-                Parent
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </a>
-              <ul className="p-2 bg-base-100">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li> */}
             <li>
-              {/* <a>Item 3</a> */}
               <label className="swap swap-rotate justify-start sm:justify-center">
                 <input type="checkbox" checked={darkMode} onChange={swapDark} />
                 <svg
@@ -147,15 +125,15 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
                 >
                   <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
                 </svg>
+                <div className="sm:hidden mx-8">
+                  {darkMode ? "Dark" : "Light"}
+                </div>
               </label>
             </li>
           </ul>
 
           <div className="flex-none sm:hidden">
-            <button
-              className="btn btn-square btn-ghost"
-              //  onClick={toggleNav}
-            >
+            <button className="btn btn-square btn-ghost" onClick={toggleNav}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

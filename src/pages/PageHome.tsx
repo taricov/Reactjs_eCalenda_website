@@ -13,17 +13,6 @@ import FeatureCard2 from "../components/FeatureCard";
 import ComingSoonCard from "../components/ComingSoonCard";
 
 export default function PageHome() {
-  // const [iframeOn, setIframe] = useState<boolean>(true);
-  // const handleIframe = () => {
-  //   setIframe((prev) => !prev);
-  // };
-  // useEffect(() => {
-  //   console.log(iframeOn);
-  //   iframeOn
-  //     ? (document.body.style.overflow = "hidden")
-  //     : (document.body.style.overflow = "auto");
-  //   // return () => (document.body.style.overflow = "scroll");
-  // }, [iframeOn]);
   return (
     <>
       {/* {iframeOn ? (
