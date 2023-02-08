@@ -34,6 +34,20 @@ module.exports = {
         }
       }
     },
+    animation: {
+      keyframes: {
+        "c_move": {
+          "0%, 100%": { transform: "translate(0, 0) " },
+          "20%": { transform: "translate(100px, 0) " },
+          "30%": { transform: "translate(100px, 100) " },
+          "40%": { transform: "translate(100px, [calc(100 * 2)]) " },
+          "50%": { transform: "translate(0, [calc(100 * 2)]) " },
+          "60%": { transform: "translate([calc(100 * -1)], [calc(100 * 2)]) " },
+          "70%": { transform: "translate([calc(100 * -1)], 100) " },
+          "80%": { transform: "translate([calc(100 * -1)], 0)" }
+        }
+      }
+    }
   },
   plugins: [require("daisyui", "@tailwindcss/forms", "flowbite/plugin")],
 }

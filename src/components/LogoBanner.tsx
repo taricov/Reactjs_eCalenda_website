@@ -1,3 +1,4 @@
+import AppLoader from "./AppLoader";
 import AppLogo from "./AppLogo";
 
 export default function LogoBanner() {
@@ -6,6 +7,7 @@ export default function LogoBanner() {
       {/* <div className="">
         <AppLogo />
       </div> */}
+      <div>{/* <AppLoader BRsize={10} fSize={200} SQsize={1000} /> */}</div>
       <h1 className="hidden sm:block lg:text-[200px] text-[140px] text-center text-app-color-500 dark:text-app-color-200">
         eCalenda
       </h1>
