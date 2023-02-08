@@ -1,22 +1,25 @@
 import { useEffect, useState } from "react";
 
 export default function AppCookiesPopover() {
-  const [cookie, setCookie] = useState<boolean>(false);
+  const [cookieShow, setCookie] = useState<boolean>(false);
+  //   setCookie(!!localStorage.getItem("askCookies") ? true : false);
+  //   console.log(cookieShow);
   useEffect(() => {
-    const localCookies = localStorage.getItem("askCookies");
-    localCookies === "acceptedCookies" ? setCookie(true) : setCookie(false);
-  });
+    !!localStorage.getItem("askCookies") ? setCookie(false) : setCookie(true);
+    console.log(!!localStorage.getItem("askCookies"));
+  }, [cookieShow]);
   const acceptCookies = () => {
-    console.log(cookie);
     localStorage.setItem("askCookies", "acceptedCookies");
+    setCookie(false);
   };
+  console.log(cookieShow);
 
   return (
     <>
       <div
         className={`${
-          cookie ? "hidden" : "block"
-        } z-40 fixed max-w-2xl p-4  bg-app-color-100 md:gap-x-4 left-5 bottom-5 w-2/3 md:w-fit  dark:bg-app-color-800 md:flex md:items-center rounded-2xl shadow-xl transition duration-300`}
+          cookieShow ? "-translate-y-5" : "translate-y-52"
+        } z-40 max-w-2xl p-4 fixed bottom-0 bg-app-color-100 md:gap-x-4 left-5 w-2/3 md:w-fit dark:bg-app-color-800 md:flex md:items-center rounded-2xl shadow-xl transition duration-300`}
       >
         <div className="flex items-center gap-x-4">
           <span className="inline-flex p-2 text-blue-500 rounded-lg shrink-0 dark:bg-app-color-300 bg-app-color-500  ">
