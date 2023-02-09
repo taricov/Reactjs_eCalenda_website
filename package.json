@@ -13,7 +13,6 @@
     "@headlessui/react": "^1.7.8",
     "@heroicons/react": "^2.0.13",
     "@tanstack/react-query": "^4.23.0",
-    "@types/scrollreveal": "^0.0.8",
     "axios": "^1.2.4",
     "daisyui": "^2.47.0",
     "flowbite": "^1.6.3",
@@ -21,12 +20,10 @@
     "formik": "^2.2.9",
     "headlessui": "^0.0.0",
     "react": "^18.2.0",
-    "react-awesome-reveal": "^4.2.3",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-router-dom": "^6.7.0",
-    "react-social-login": "^3.4.16",
-    "react-type-animation": "^2.1.2",
-    "scrollreveal": "^4.0.9"
+    "react-type-animation": "^2.1.2"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
@@ -36,6 +33,7 @@
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4",
+    "tailwindcss-themer": "^2.0.3",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   }

@@ -1,3 +1,7 @@
+
+
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
@@ -54,6 +58,37 @@ module.exports = {
         }
       }
     }
+
   },
-  plugins: [require("daisyui", "@tailwindcss/forms", "flowbite/plugin")],
+  plugins: [
+    require("daisyui"),
+    require("@tailwindcss/forms"),
+    require("flowbite/plugin"),
+    // require('tailwindcss-themer')(
+    //   {
+    //     // defaultTheme: {},
+    //     themes: [
+    //       {
+    //         name: "basew",
+    //         extend: {
+    //           colors: {
+    //             'app-color': {
+    //               '50': '#f2fbf5',
+    //               '100': '#e0f8e9',
+    //               '200': '#c3efd3',
+    //               '300': '#94e1b2',
+    //               '400': '#5dcb87',
+    //               '500': '#37b067',
+    //               '600': '#278b4e',
+    //               '700': '#237243',
+    //               '800': '#205b37',
+    //               '900': '#1c4b30',
+    //             }
+    //           }
+    //         }
+    //       }
+    //     ]
+    //   },
+    // )
+  ],
 }

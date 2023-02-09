@@ -1,3 +1,4 @@
+import TitlePage from "../components/TitlePage";
 import ApiDocsNavBar from "../layout/ApiDocsNavBar";
 import ApiDocsSection from "../layout/ApiDocsSection";
 import AppHeader from "../layout/AppHeader";
@@ -50,7 +51,7 @@ export default function PageApiDocs() {
       <div className="min-h-screen flex sm:-mt-10 mt-0">
         <div className="flex flex-col min-w-fit w-1/3 md:w-3/5 md:max-1/5 overflow-hidden bg-app-color-500 bg-opacity-2 dark:bg-app-color-100 dark:bg-opacity-1">
           <div className="flex text-xl pt-5 text-app-color-700 text-opacity-30  dark:text-app-color-100 dark:text-opacity-90 mx-6 underline font-semibold">
-            API Docs:
+            {/* API Docs: */}
           </div>
           <ul className="flex flex-col py-4 px-2">
             <div className="w-full px-2">
@@ -102,16 +103,14 @@ export default function PageApiDocs() {
         <div className="flex justify-center items-center grow">
           <div className="h-full w-full p-5 flex-col justify-center items-center">
             <br />
-            <br />
-            <br />
-            <br />
 
             <div className="">
-              <div className="h-[70px]" id="api_keys"></div>
+              <TitlePage title="Getting Access" desc="To get access to your eCalenda data via the API endpoints. You can follow the following instructions to get your API Key"/>
+              <div className="py-20" id="api_keys">
               <h1
                 className="text-xl font-bold text-app-color-700 dark:text-app-color-200 px-5"
                 // id="api_keys"
-              >
+                >
                 API Keys
               </h1>
               <div className="text-app-color-700 dark:text-app-color-200 px-5 py-3">
@@ -122,6 +121,7 @@ export default function PageApiDocs() {
                 with the specific API .
               </div>
               <CodeBlock />
+            </div>
             </div>
           </div>
         </div>
