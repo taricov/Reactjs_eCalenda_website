@@ -5,7 +5,7 @@ import SectionTitle from "../components/SectionTitle";
 import AppHeader from "../layout/AppHeader";
 import FeatureSection from "../layout/FeatureSection";
 import HeroSection from "./HeroSection";
-import { Fade } from "react-awesome-reveal";
+
 import PagePricing from "./PagePricing";
 import IframeEmbed from "../components/IframeEmbed";
 import { useEffect, useState } from "react";

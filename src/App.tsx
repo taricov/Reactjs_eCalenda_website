@@ -84,7 +84,7 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className={`App  ${isDark ? "dark" : "light"}`}>
+    <div  className={`App  ${isDark ? "dark" : "light"}`}>
       {/* <AppHeader /> */}
       <LogoBanner />
       <Navbar darkMode={isDark} darkModeHandler={setDark} />

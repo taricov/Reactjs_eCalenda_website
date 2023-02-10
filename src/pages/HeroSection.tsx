@@ -38,13 +38,13 @@ export default function HeroSection() {
           <div className="flex flex-wrap justify-center">
             <a
               href="/register"
-              className="px-8 py-3 m-2 text-lg font-semibold rounded bg-app-color-300 hover:bg-opacity-50 dark:hover:bg-opacity-50 dark:bg-app-color-700 text-app-color-700 dark:text-app-color-200 transition-all duration-200"
+              className="px-8 py-3 m-2 text-lg font-semibold rounded bg-app-color-300 hover:bg-opacity-50 dark:hover:bg-opacity-50 dark:bg-app-color-700 text-app-color-700 dark:text-app-color-200 transition-all duration-200 hover:-translate-y-px"
             >
               Get started
             </a>
             <a
               className="px-8 py-3 m-2 text-lg border rounded
-              border-app-color-700 dark:border-app-color-300 text-app-color-700  hover:bg-app-color-300 hover:bg-opacity-10 dark:hover:bg-opacity-1 dark:hover:bg-app-color-200 dark:text-app-color-200 transition-all duration-200"
+              border-app-color-700 dark:border-app-color-300 text-app-color-700  hover:bg-app-color-300 hover:bg-opacity-10 dark:hover:bg-opacity-1 dark:hover:bg-app-color-200 dark:text-app-color-200 transition-all duration-200 hover:-translate-y-px"
               href="/tutorial"
             >
               Learn more

@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction, useState } from "react";
+import MegaMenuNav from "./MegaMenuNav";
 interface Props {
   darkMode: boolean;
   darkModeHandler: Dispatch<SetStateAction<boolean>>;
@@ -39,10 +40,11 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
       {/* <pre slot="react" style={{ marginBottom: "0px", marginTop: "0px" }} /> */}
 
       <div className="navbar bg-app-color-100 dark:bg-app-color-900 basee:bg-app-color-900 shadow-md sm:sticky sticky top-0 sm:my-10 sm:z-10 z-10">
+  <MegaMenuNav/>
+
         <div className="flex-1">
           <a
             className="btn btn-ghost normal-case text-xl text-app-color-500 dark:text-app-color-100"
-            // onClick={scrollToTop}
             href="/"
           >
             eCalenda
@@ -57,40 +59,44 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
           >
             <li>
               <a
-                // onClick={scrollToFeatures}
+              
                 className="text-app-color-500 dark:text-app-color-100"
               >
                 Features
               </a>
             </li>
+         
             <li>
-              <a
-                // onClick={scrollToPlans}
-                className="text-app-color-500 dark:text-app-color-100"
-              >
-                Plans
-              </a>
-            </li>
-            <li>
-              <div className="dropdown">
-                <label
-                  tabIndex={0}
-                  className="btn-default text-app-color-500 dark:text-app-color-100"
-                >
-                  Click
-                </label>
-                <ul
-                  tabIndex={0}
-                  className="dropdown-content top-[55px] menu p-2 shadow dark:text-app-color-200 text-app-color-600 dark:bg-app-color-900 bg-app-color-100 rounded-br rounded-bl w-52"
-                >
-                  <li className="w-full">
+            <div className="dropdown active:bg-app-color-200 dark:active:bg-app-color-800">
+  <label tabIndex={0} 
+                  className="btn-default text-app-color-500 dark:text-app-color-100 cursor-pointer"
+                  >Explore</label>
+                  <label className="btn -ml-6 bg-transparent hover:bg-transparent border-none swap swap-rotate relative">
+  <input type="checkbox" />
+ 
+<svg 
+className="swap-off text-app-color-200 " width="18"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.6806 13.9783L15.4706 10.7683L13.5106 8.79828C12.6806 7.96828 11.3306 7.96828 10.5006 8.79828L5.32056 13.9783C4.64056 14.6583 5.13056 15.8183 6.08056 15.8183H11.6906H17.9206C18.8806 15.8183 19.3606 14.6583 18.6806 13.9783Z" className="fill-app-color-700 dark:fill-app-color-200"/>
+</svg>
+
+
+  <svg className="swap-on bg-transparent" width="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.9188 8.17969H11.6888H6.07877C5.11877 8.17969 4.63877 9.33969 5.31877 10.0197L10.4988 15.1997C11.3288 16.0297 12.6788 16.0297 13.5088 15.1997L15.4788 13.2297L18.6888 10.0197C19.3588 9.33969 18.8788 8.17969 17.9188 8.17969Z" className="fill-app-color-700 dark:fill-app-color-200"/>
+</svg>
+</label>
+  {/* <ul tabIndex={0} 
+                  className="dropdown-content top-[55px] left-0 menu p-2 shadow dark:text-app-color-200 text-app-color-600 sm:dark:bg-app-color-900 sm:bg-app-color-100 bg-app-color-100 dark:bg-app-color-800 rounded-br rounded-bl w-52"
+                  >
+ <li className="w-full border-b border-app-color-600 dark:border-app-color-200 border-opacity-40 dark:border-opacity-40 rouned-none ">
                     <a className="w-full">Item 1</a>
                   </li>
-                  <li>
+                  <li
+                   className="w-full rouned-none">
                     <a className="w-full">Item 2</a>
                   </li>
-                </ul>
-              </div>
+                </ul> */}
+</div>
+            
             </li>
             <li>
               <a
@@ -98,6 +104,14 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
                 className="text-app-color-500 dark:text-app-color-100"
               >
                 Updates
+              </a>
+            </li>
+            <li>
+              <a
+              href="/plans"
+                className="text-app-color-500 dark:text-app-color-100"
+              >
+                Plans
               </a>
             </li>
             <li>
