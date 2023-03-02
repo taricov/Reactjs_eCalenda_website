@@ -3,12 +3,12 @@ import { Combobox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 
 const people: any = [
-  { id: 1, name: "Wade Cooper" },
-  { id: 2, name: "Arlene Mccoy" },
-  { id: 3, name: "Devon Webb" },
-  { id: 4, name: "Tom Cook" },
-  { id: 5, name: "Tanya Fox" },
-  { id: 6, name: "Hellen Schmidt" },
+  { id: 1, name: "USA" },
+  { id: 2, name: "Pakistan" },
+  { id: 3, name: "KSA" },
+  { id: 4, name: "Africa" },
+  { id: 5, name: "Europe" },
+  { id: 6, name: "Rest of the world" },
 ];
 
 export default function AppAutoComplete() {

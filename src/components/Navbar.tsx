@@ -40,7 +40,7 @@ export default function Navbar({ darkMode, darkModeHandler }: Props) {
       {/* <pre slot="react" style={{ marginBottom: "0px", marginTop: "0px" }} /> */}
 
       <div className="navbar bg-app-color-100 dark:bg-app-color-900 basee:bg-app-color-900 shadow-md sm:sticky sticky top-0 sm:my-10 sm:z-10 z-10">
-  <MegaMenuNav/>
+  {/* <MegaMenuNav/> */}
 
         <div className="flex-1">
           <a

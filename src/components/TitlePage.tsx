@@ -4,7 +4,7 @@ export default function TitlePage({
   highlighted = "",
 }: {
   title: React.ReactNode;
-  desc: string;
+  desc: string | React.ReactNode[];
   highlighted?: string;
 }) {
   return (

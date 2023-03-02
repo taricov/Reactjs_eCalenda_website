@@ -1,0 +1,241 @@
+:root{
+    --c:#f15744;
+    --a:#2e7c6d;
+    --l:#833f7d;
+    --e:#f2a116;
+    --n:#235c7b;
+    --d:#1a5144;
+    --aa: #9a394a;
+    --e-border: #5a696e;
+    
+    --sq: 100px;
+    --borderWidth: 5px;
+     --fontSize: 70px;
+    --move: calc(var(--sq) + var(--borderWidth));
+    --move2: 30px;
+    
+    --dur: 5s;
+  }
+  
+  .c{
+    @apply bg-[var(--c)];
+  }
+  .a{
+    @apply bg-[var(--a)];
+  }
+  .l{
+    @apply bg-[var(--l)];
+  }
+  .e{
+    @apply bg-[var(--e)];
+  }
+  .n{
+    @apply bg-[var(--n)];
+  }
+  
+  .d{
+    @apply bg-[var(--d)];
+  }
+  
+  
+  .aa{
+    @apply bg-[var(--aa)];
+  }
+  
+  .e .letter{
+    -webkit-text-stroke: 3px var(--e-border); 
+  }
+  
+  .wrapper{
+    @apply flex items-center justify-center w-full h-full
+  }
+  .container{
+    @apply flex
+  
+    
+  }
+  .row{
+    @apply flex
+    
+  }
+  .square{
+    @apply flex justify-center items-center w-[var(--sq)] h-[var(--sq)] mr-[calc(var(--borderWidth)*-1)] mb-[calc(var(--borderWidth)*-1)]
+
+    /* margin-bottom: calc(var(--borderWidth)*-1);
+    margin-right: calc(var(--borderWidth)*-1) */
+    
+  }
+  .letter{
+    @apply text-app-color-50 font-bold text-[var(--fontSize)]
+  }
+  
+  .row:first-child .square:first-child, .row:last-child .square:last-child{
+  /*   border: none  */
+@apply invisible
+  }
+  .row:nth-child(2) .square:nth-child(2){
+      /* animation: ee_anime var(--dur) .1s ease-in-out infinite; */
+  }
+  
+  @keyframes wobble {
+     0% { transform: translate(0%, 0px) scale(1)  } 
+     5% { transform: translate(-25%, -5px) rotate(-5deg) scale(1)  } 
+     10% { transform: translate(20%, -10px) rotate(3deg) scale(1.1) } 
+     15% { transform: translate(-15%, -15px) rotate(-3deg) scale(1.2)  } 
+     20% { transform: translate(10%, -20px) rotate(2deg) scale(1.3)  }
+     25% { transform: translate(-5%,-25px) rotate(-1deg) scale(1.4)  }
+     30% { transform: translate(0, -30px) scale(1.5)  } 
+      90% { transform: translate(0, -30px) scale(1.5)  }
+  } 
+  
+  
+  @keyframes ee_animated {
+    0%, 100% {transform: translate(0, 0) scale(1)} 
+  /*    20% {transform: translate(var(--move), 0)}           
+    30% {transform: translate(var(--move), var(--move))}           
+    40% {transform: translate(var(--move), calc(var(--move)*2))}            */
+    20% {transform: translate(calc(var(--move2)*-1),0) scaleX(.8)} 
+     40% {transform: translate(calc(var(--move2)*-1),0) scaleX(.8)} 
+  
+  /*   5 0% {transform: translate(calc(var(--move2)*-1),0) scaleX(1)}  */
+     50% {transform: translate(calc(var(--move2)*1),0) scaleX(.8)} 
+    
+     60% {transform: translate(calc(var(--move2)*0),calc(var(--move2)*-1)) scale(1.3)} 
+     80% {transform: translate(calc(var(--move2)*0),0) scale(1.3)} 
+  /*    75% {transform: translate(calc(var(--move2)*1),0) rotate(2deg) scale(.6)} 
+    % {transform: translate(calc(var(--move2)*1),0) rotate(-2deg) scale(.6)} 
+    77% {transform: translate(calc(var(--move2)*1),0) rotate(2deg) scale(.6)} 
+     80% {transform: translate(calc(var(--move2)*1),0) rotate(-2deg) scale(.6)}
+       83% {transform: translate(calc(var(--move2)*1),0) rotate(0deg) scale(.6)}  */
+  }
+  
+  
+  @keyframes e_animated {
+    0%, 100% {transform: translate(0, 0)} 
+  /*    20% {transform: translate(var(--move), 0)}           
+    30% {transform: translate(var(--move), var(--move))}           
+    40% {transform: translate(var(--move), calc(var(--move)*2))}            */
+    50% {transform: translate(0,calc(var(--move2)*-1))} 
+       60% {transform: translate(0, calc(var(--move2)*-1))} 
+  }
+  /*   60% {transform: translate(calc(var(--move)*-1), calc(var(--move)*2))} 
+    70% {transform: translate(calc(var(--move)*-1), var(--move))} 
+  
+  /* ================ */
+  
+  /* 
+  
+  
+  .row:first-child .square:nth-child(2){
+    background: #abaf4c;
+      animation: c_move var(--dur) .1s cubic-bezier(.6,.01,.4,1) infinite;
+  }
+  
+  .row:first-child .square:nth-child(3){
+    background: #af824c;
+      animation: a_move var(--dur) cubic-bezier(.6,.01,.4,1) infinite;
+  }
+  
+  
+  @keyframes c_move {
+    0%, 100% {transform: translate(0, 0)} 
+     20% {transform: translate(var(--move), 0)}           
+    30% {transform: translate(var(--move), var(--move))}           
+    40% {transform: translate(var(--move), calc(var(--move)*2))}           
+    50% {transform: translate(0, calc(var(--move)*2))} 
+    60% {transform: translate(calc(var(--move)*-1), calc(var(--move)*2))} 
+    70% {transform: translate(calc(var(--move)*-1), var(--move))} 
+    80% {transform: translate(calc(var(--move)*-1), 0)}
+  }
+  
+  @keyframes a_move {
+    0%, 100% {transform: translate(0, 0)} 
+    20% {transform: translate(0, var(--move))}           
+    30% {transform: translate(0, calc(var(--move)*2))}           
+    40% {transform: translate(calc(var(--move)*-1), calc(var(--move)*2))}           
+    50% {transform: translate(calc(var(--move)*-2), calc(var(--move)*2))} 
+    60% {transform: translate(calc(var(--move)*-2), var(--move))} 
+    70% {transform: translate(calc(var(--move)*-2), 0)} 
+    80% {transform: translate(calc(var(--move)*-1), 0)} 
+  }
+  
+  /* /* LD */
+  /*
+  .row:nth-child(2) .square:nth-child(1){
+    background: #4cabaf;
+      animation: l_move var(--dur) cubic-bezier(.6,.01,.4,1) infinite;
+  }
+  .row:nth-child(3) .square:nth-child(1){
+    background: #4caf50;
+      animation: d_move var(--dur) .1s cubic-bezier(.6,.01,.4,1) infinite;
+  } */
+  /* 
+  
+  @keyframes l_move {
+    0%, 100% {transform: translate(0, 0)} 
+    20% {transform: translate(0, calc(var(--move)*-1))}           
+    30% {transform: translate(var(--move), calc(var(--move)*-1))}           
+    40% {transform: translate(calc(var(--move)*2), calc(var(--move)*-1))}           
+    50% {transform: translate(calc(var(--move)*2), 0)} 
+    60% {transform: translate(calc(var(--move)*2), var(--move))} 
+    70% {transform: translate(var(--move), var(--move))} 
+    80% {transform: translate(0, var(--move))} 
+  }
+  
+  @keyframes d_move {
+    0%, 100% {transform: translate(0, 0)} 
+    20% {transform: translate(0, calc(var(--move)*-1))}           
+    30% {transform: translate(0, calc(var(--move)*-2))}           
+    40% {transform: translate(var(--move), calc(var(--move)*-2))}           
+    50% {transform: translate(calc(var(--move)*2), calc(var(--move)*-2))} 
+    60% {transform: translate(calc(var(--move)*2), calc(var(--move)*-1))} 
+    70% {transform: translate(calc(var(--move)*2), 0)} 
+    80% {transform: translate(var(--move), 0)} 
+  } */
+  /* 
+  @keyframes l_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(0, -155px)} 
+    50% {transform: translate(155px, -155px)} 
+    75% {transform: translate(0, -155px)} 
+  }
+  
+  @keyframes d_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(0, -155)} 
+    50% {transform: translate(0, -155px)} 
+    75% {transform: translate(0, -155px)} 
+  }
+  
+  .row:nth-child(2) .square:nth-child(3){
+    background: #504caf;
+      animation: n_move var(--dur) cubic-bezier(.6,.01,.4,1) infinite;
+  }
+  .row:last-child .square:nth-child(2){
+    background: #af504c;
+      animation: aa_move var(--dur) .1s cubic-bezier(.6,.01,.4,1) infinite;
+  }
+  
+  
+  @keyframes n_move {
+    0%, 100% {transform: translate(0, 0)} 
+    20% {transform: translate(0, var(--move))}           
+    30% {transform: translate(calc(var(--move)*-1), var(--move))}           
+    40% {transform: translate(calc(var(--move)*-2), var(--move))}           
+    50% {transform: translate(calc(var(--move)*-2), 0)} 
+    60% {transform: translate(calc(var(--move)*-2), calc(var(--move)*-1))} 
+    70% {transform: translate(calc(var(--move)*-1), calc(var(--move)*-1))} 
+    80% {transform: translate(0, calc(var(--move)*-1))} 
+  }
+  
+  @keyframes aa_move {
+    0%, 100% {transform: translate(0, 0)} 
+    20% {transform: translate(calc(var(--move)*-1), 0)}           
+    30% {transform: translate(calc(var(--move)*-1), calc(var(--move)*-1))}       
+    40% {transform: translate(calc(var(--move)*-1), calc(var(--move)*-2))}           
+    50% {transform: translate(0, calc(var(--move)*-2))} 
+    60% {transform: translate(var(--move), calc(var(--move)*-2))} 
+    70% {transform: translate(var(--move), calc(var(--move)*-1))} 
+    80% {transform: translate(var(--move), 0)} 
+  }
+   */

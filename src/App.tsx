@@ -7,7 +7,7 @@ import "./index.css";
 import LogoBanner from "./components/LogoBanner";
 import SectionTitle from "./components/SectionTitle";
 import LongPane from "./components/LongPane";
-import APIDox from "./components/APIDox";
+import APIDox from "./components/MegaMenuNav";
 import axios from "axios";
 import API_Sidebar from "./layout/ApiDocsNavBar";
 import PageApiDocs from "./pages/PageApiDocs";
