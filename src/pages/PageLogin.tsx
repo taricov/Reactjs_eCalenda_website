@@ -1,5 +1,5 @@
 // import SocialButton from "./SocialButton";
-import SocialLogin from "react-social-login";
+
 
 const handleSocialLogin = (user: any) => {
   console.log(user);
