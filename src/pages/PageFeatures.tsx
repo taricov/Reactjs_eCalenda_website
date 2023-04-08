@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import ScrollReveal from "scrollreveal";
+
 
 const featuresObj = {
   someting: [
