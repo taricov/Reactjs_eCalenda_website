@@ -1,23 +1,23 @@
 import { useEffect, useRef, useState } from "react";
-import { Fade } from "react-awesome-reveal";
-import ScrollReveal from "scrollreveal";
+// import { Fade } from "react-awesome-reveal";
+// import ScrollReveal from "scrollreveal";
 
 export default function Pricing() {
   const sectionRef = useRef<any>(null);
 
-  const sr = ScrollReveal({
-    origin: "top",
-    distance: "30px",
-    duration: 2000,
-    reset: true,
-  });
+  // const sr = ScrollReveal({
+  //   origin: "top",
+  //   distance: "30px",
+  //   duration: 2000,
+  //   reset: true,
+  // });
 
-  useEffect(() => {
-    if (sectionRef.current)
-      ScrollReveal().reveal(sectionRef.current, {
-        interval: 200,
-      });
-  }, []);
+  // useEffect(() => {
+  //   if (sectionRef.current)
+  //     ScrollReveal().reveal(sectionRef.current, {
+  //       interval: 200,
+  //     });
+  // }, []);
   const [priceToggle, setPriceToggle] = useState<boolean>(false);
 
   const prices = [
