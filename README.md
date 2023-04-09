@@ -1,21 +1,21 @@
-**[UNshipped][Failed]** **[Startup]:** [eCalenda](https://e-calenda-website.vercel.app/) 
+**[UNshipped][Failed][Startup]:** [eCalenda](https://e-calenda-website.vercel.app/) 
 ## eCalenda_website 
 
-This repo contains all the files for the website (the pitcher) of my UNshipped software product eCalenda.com [check it out in repos[here](https://github.com/taricov/Reactjs_eCalenda_app)] 
+This repo contains all the files for the website (the pitcher) of my UNshipped software product eCalenda.com [check it out in repos [here](https://github.com/taricov/Reactjs_eCalenda_app)] 
 
 <div align="center">
 
   <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
+  <h1>eCalenda - Startup Project</h1>
   
   <p>
-    An awesome README template for your projects! 
+    A brief about the project and it's ins
   </p>
   
   
 <!-- Badges -->
 <p>
-  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
+  <a href="https://github.com/taricov/Reactjs_eCalenda_website/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
   </a>
   <a href="">
@@ -24,7 +24,7 @@ This repo contains all the files for the website (the pitcher) of my UNshipped s
   <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
     <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
   </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/stargazers">
+  <a href="https://github.com/taricov/Reactjs_eCalenda_website/stargazers">
     <img src="https://img.shields.io/github/stars/Louis3797/awesome-readme-template" alt="stars" />
   </a>
   <a href="https://github.com/Louis3797/awesome-readme-template/issues/">
@@ -35,15 +35,16 @@ This repo contains all the files for the website (the pitcher) of my UNshipped s
   </a>
 </p>
    
-<h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
+<!-- <h4>
+    <a href="https://github.com/taricov/Reactjs_eCalenda_website">View Demo</a>
   <span> · </span>
     <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
   <span> · </span>
     <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
   <span> · </span>
     <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
-  </h4>
+  </h4> 
+-->
 </div>
 
 <br />
