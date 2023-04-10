@@ -11,7 +11,7 @@ This repo contains all the files for the website (the pitcher) of my UNshipped s
 
 
 <a href="">
-  <img alt="Imagyfy – An online screenshot and tweet to image app." src="https://imagyfy.com/cover.png">
+  <img alt="Imagyfy – An online screenshot and tweet to image app." src="">
   <h1 align="center">eCaleda</h1>
 </a>
 
@@ -25,15 +25,15 @@ A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One P
   </a>
 
     <a href="https://linkedin.com/en/taricov">
-    <img src="https://img.shields.io/badge/Taric%20Ov-0077B5?style=socja,&logo=linkedin&logoColor=fff" alt="Taric Ov's Linkedin Account" />
+    <img src="https://img.shields.io/badge/Taric%20Ov-0077B5?style=social&logo=linkedin&logoColor=fff" alt="Taric Ov's Linkedin Account" />
   </a>
   
       <a href="https://taric-ov.medium.com/">
-    <img src="https://img.shields.io/badge/Taric%20Ov-000?style=socja,&logo=medium&logoColor=white" alt="Taric Ov's Linkedin Account" />
+    <img src="https://img.shields.io/badge/Taric%20Ov-000?style=social&logo=medium&logoColor=white" alt="Taric Ov's Medium Account" />
   </a>
   
         <a href="https://podcasters.spotify.com/pod/show/taric-ov0">
-    <img src="https://img.shields.io/badge/Taric%20Ov-1DB954?&logo=spotify&logoColor=white" alt="Taric Ov's Linkedin Account" />
+    <img src="https://img.shields.io/badge/Taric%20Ov-1DB954?&logo=spotify&logoColor=white" alt="Taric Ov's Spotify Podcast" />
   </a>
 </div>
 
