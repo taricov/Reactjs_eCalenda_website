@@ -34,7 +34,7 @@ A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One P
   
   <p align="center" style="display:inline-block">
  <a href="https://linkedin.com/en/taricov">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=social&logo=linkedin&logoColor=white" alt="Taric Ov's Linkedin Account"/>
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="Taric Ov's Linkedin Account"/>
   </a>
   </p>
   
