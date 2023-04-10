@@ -22,8 +22,8 @@ A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One P
 
 ## Author
 
-<a href="https://twitter.com/taricov">
-  <div align="center" style="font-size:15px";>Taric Ov</div>
+<a href="https://twitter.com/taricov" style="font-size:15px;padding: 4px 2px;background: gray">
+  <div align="center" >Taric Ov</div>
 </a>
 
 <div align="center">
