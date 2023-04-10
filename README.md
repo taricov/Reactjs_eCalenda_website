@@ -23,14 +23,14 @@ A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One P
 ## Author
 
 <a href="https://twitter.com/taricov">
-  <h2 align="center">Taric Ov</h2>
+  <div align="center" style="font-size:15px";>Taric Ov</div>
 </a>
 
 <div align="center">
 Software Engineer @Daftra | Data Passionate | AI Junkie <br/>SaaS | ERP | TypeScript | ReactJs | VueJs | SvelteKit | NextJs | Python | Laravel | Ruby | Golang
 </p>
 
-- Find more about me:
+Find more about me:
 
 <div align="center">
 
