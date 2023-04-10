@@ -30,7 +30,7 @@ A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One P
   </a>
   
   <a href="https://taric-ov.medium.com/">
-    <img src="https://img.shields.io/badge/Taric%20Ov-000?style=flat&logo=medium&logoColor=white" alt="Taric Ov's Medium Account" />
+    <img src="https://img.shields.io/badge/Taric%20Ov-fff?style=flat&logo=medium&logoColor=000" alt="Taric Ov's Medium Account" />
   </a>
   
   <p align="center" style="display:inline-block">
