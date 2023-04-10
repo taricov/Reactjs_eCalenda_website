@@ -12,11 +12,11 @@ This repo contains all the files for the website (the pitcher) of my UNshipped s
 
 <a href="">
   <img alt="Imagyfy – An online screenshot and tweet to image app." src="https://imagyfy.com/cover.png">
-  <h1 align="center">Imagyfy</h1>
+  <h1 align="center">eCaleda</h1>
 </a>
 
 <p align="center">
-  An online screenshot and tweet to image app.
+A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One Place
 </p>
 
 <div align="center">
