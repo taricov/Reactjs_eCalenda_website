@@ -20,16 +20,17 @@ A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One P
 </p>
 
 <div align="center">
+  <p>
   <a href="https://twitter.com/taricov">
     <img src="https://img.shields.io/twitter/follow/taric_ov?style=social" alt="Taric Ov's Twitter Account" />
   </a>
+  </p>
   
-  
-  
+  <p>
      <a href="https://podcasters.spotify.com/pod/show/taric-ov0">
     <img src="https://img.shields.io/badge/Taric%20Ov-1DB954?&logo=spotify&logoColor=white" alt="Taric Ov's Spotify Podcast" />
   </a>
-
+  </p>
   
 </div>
 
