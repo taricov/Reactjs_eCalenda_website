@@ -24,10 +24,7 @@ A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One P
     <img src="https://img.shields.io/twitter/follow/taric_ov?style=social" alt="Taric Ov's Twitter Account" />
   </a>
   
-    <a href="https://taric-ov.medium.com/">
-    <img src="https://img.shields.io/badge/Taric%20Ov-000?style=social&logo=medium&logoColor=white" alt="Taric Ov's Medium Account" />
-  </a>
-  
+
     <a href="https://podcasters.spotify.com/pod/show/taric-ov0">
     <img src="https://img.shields.io/badge/Taric%20Ov-1DB954?&logo=spotify&logoColor=white" alt="Taric Ov's Spotify Podcast" />
   </a>
