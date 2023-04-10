@@ -34,7 +34,7 @@ A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One P
   </a>
   
      <a href="https://podcasters.spotify.com/pod/show/taric-ov0">
-    <img src="https://img.shields.io/badge/Taric%20Ov-1DB954?&logo=spotify&logoColor=white&syle=flat" alt="Taric Ov's Spotify Podcast" />
+    <img src="https://img.shields.io/badge/Taric%20Ov-1DB954?&logo=spotify&logoColor=white&style=flat" alt="Taric Ov's Spotify Podcast" />
   </a>
   
 </div>
