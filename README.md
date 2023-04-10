@@ -15,18 +15,18 @@ This repo contains all the files for the website (the pitcher) of my UNshipped s
   <h1 align="center">eCalenda</h1>
 </a>
 
-<p align="center">
+<div align="center">
 A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One Place
 </p>
 
 <div align="center">
-  <p>
+<p align="center" display="inline-block">
   <a href="https://twitter.com/taricov">
     <img src="https://img.shields.io/twitter/follow/taric_ov?style=social" alt="Taric Ov's Twitter Account" />
   </a>
   </p>
   
-  <p>
+<p align="center" display="inline-block">
      <a href="https://podcasters.spotify.com/pod/show/taric-ov0">
     <img src="https://img.shields.io/badge/Taric%20Ov-1DB954?&logo=spotify&logoColor=white" alt="Taric Ov's Spotify Podcast" />
   </a>
