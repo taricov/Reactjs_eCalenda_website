@@ -84,8 +84,8 @@ Imagyfy - An online screenshot and tweet to image app.
 
 
 <div align="bottom">
-<img align="" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=vishnudas-bluefox&theme=github_dark">
-<img align="" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=vishnudas-bluefox&theme=github_dark">
+<img align="" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=taricov&theme=github_dark">
+<img align="" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=taricov&theme=github_dark">
 
 <div/>
   
