@@ -21,9 +21,9 @@ This repo contains all the files for the website (the pitcher) of my UNshipped s
 
 <div align="center">
   <a href="https://twitter.com/taricov">
-    <img src="https://img.shields.io/twitter/follow/taric_ov?style=flat&label=%40taric_ov&logo=twitter&color=0bf&logoColor=fff" alt="Taric Ov's Twitter Account" />
+    <img src="https://img.shields.io/twitter/follow/taric_ov?style=social" alt="Taric Ov's Twitter Account" />
       <a href="https://linkedin.com/en/taricov">
-    <img src="https://img.shields.io/linkedin/follow/taricov?style=flat&label=Taric%20Ov&logo=twitter&color=0e76a8&logoColor=fff" alt="Taric Ov's Linkedin Account" />
+    <img src="https://img.shields.io/badge/Taric%20Ov-0077B5?style=socja,&logo=linkedin&logoColor=fff" alt="Taric Ov's Linkedin Account" />
   </a>
   </a>
 </div>
