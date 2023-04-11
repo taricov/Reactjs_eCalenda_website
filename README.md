@@ -2,12 +2,8 @@
 
 ![SCR-20230125-stj](https://user-images.githubusercontent.com/65824043/231025083-584d5600-448d-4f65-88d7-77eae3521f93.jpeg)
 
-<!-- <a href="">
-   <img alt="" src=""> -->
-<!-- </a> -->
 
   
-![1](https://user-images.githubusercontent.com/65824043/231025227-ecbe6a4d-8b18-4292-802e-e32f563e6279.gif)
 
 
   <h1 align="center">eCalenda</h1>
@@ -16,11 +12,16 @@ A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One P
 </p>
 
 
+
 ...To get more information about that project Check out the following links:
 
 ✅ [LinkedIn post:](https://www.linkedin.com/posts/taricov_testing-experience-share-activity-7028380891672363008-Ec6K?utm_source=share&utm_medium=member_desktop), <br/>
 ✅ Go to the app repo directly from this [link](https://github.com/taricov/Reactjs_eCalenda_app)
 
+
+![1](https://user-images.githubusercontent.com/65824043/231025227-ecbe6a4d-8b18-4292-802e-e32f563e6279.gif)
+
+<br/>
 
 ![22](https://user-images.githubusercontent.com/65824043/231025800-955c635b-1264-42eb-bd91-41045298da22.JPG)
 
@@ -29,7 +30,7 @@ A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One P
 
 
 
-## Author
+# Author
 
 <a href="https://twitter.com/taricov" style="font-size:15px;padding: 4px 2px;background: gray">
   <h2 align="center" >Taric Ov</h2>
@@ -69,22 +70,17 @@ Find more about me:
 
 
 ## Tech Stack
+   
+   
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
+   
+<img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/>
 
-<h3 align="left">Languages and Tools:</h3>
+ <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
    
+<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> 
    
-   <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> 
-   
-   
-   <a href="https://tailwindcss.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> 
-   
-
-
-   <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
-   
-   <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
-   
-   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
    
    
 
