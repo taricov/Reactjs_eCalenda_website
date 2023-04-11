@@ -1,14 +1,5 @@
-**[UNshipped][Failed][Startup]:** [eCalenda](https://e-calenda-website.vercel.app/) 
+<span style="color:red;">**[UNshipped]</span>[Startup]:** [eCalenda](https://e-calenda-website.vercel.app/) 
 ## eCalenda_website 
-
-This repo contains all the files for the website (the pitcher) of my UNshipped software product eCalenda.com [check it out in repos [here](https://github.com/taricov/Reactjs_eCalenda_app)] 
-
-
-...To get more information about that project, refer to this [link](https://github.com/taricov/Reactjs_eCalenda_app)] 
-
-
-## Here's some screenshots and snippets from the website ...
-
 
 <a href="">
   <img alt="Imagyfy – An online screenshot and tweet to image app." src="">
