@@ -10,20 +10,23 @@
 ![1](https://user-images.githubusercontent.com/65824043/231025227-ecbe6a4d-8b18-4292-802e-e32f563e6279.gif)
 
 
+  <h1 align="center">eCalenda</h1>
+<div align="center">
+A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One Place
+</p>
+
+
+...To get more information about that project Check out the following links:
+
+✅ [LinkedIn post:](https://www.linkedin.com/posts/taricov_testing-experience-share-activity-7028380891672363008-Ec6K?utm_source=share&utm_medium=member_desktop), <br/>
+✅ Go to the app repo directly from this [link](https://github.com/taricov/Reactjs_eCalenda_app)
+
+
 ![22](https://user-images.githubusercontent.com/65824043/231025800-955c635b-1264-42eb-bd91-41045298da22.JPG)
 
 <br/>
 
 
-...To get more information about that project Check out the following links:
-
-✅ [LinkedIn post:](https://www.linkedin.com/posts/taricov_testing-experience-share-activity-7028380891672363008-Ec6K?utm_source=share&utm_medium=member_desktop), 
-✅ Go to the app repo directly from this [link](https://github.com/taricov/Reactjs_eCalenda_app)
-
-  <h1 align="center">eCalenda</h1>
-<div align="center">
-A Cloud-Based Web App To Manage All Your Time-Related Events Safely And In One Place
-</p>
 
 
 ## Author
@@ -67,37 +70,7 @@ Find more about me:
 
 ## Tech Stack
 
-- [SvelteKit](https://kit.svelte.dev/) – framework
-- [SvelteLegos](https://svelte-legos.singhalankur.com/) – utilities
-- [Tailwind](https://tailwindcss.com/) – CSS
-
-
-
-
-
-
-<div align="bottom">
-<img align="" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=taricov&theme=dark">
-<img align="" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=taricov&theme=dark">
-
-<div/>
-  
-  
-  
-
-  
-***
-# Icons
-
 <h3 align="left">Languages and Tools:</h3>
-
-   <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
-   
-   <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-   
-   </a> <a href="https://www.invisionapp.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg" alt="invision" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
-   
-   </a> <a href="https://www.invisionapp.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg" alt="invision" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/typescript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/typescript-original.svg" alt="javascript" width="40" height="40"/> </a> 
    
    
    <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> 
@@ -106,6 +79,14 @@ Find more about me:
    <a href="https://tailwindcss.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> 
    
 
+
+   <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
+   
+   <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
+   
+   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
+   
+   
 
 </div>
 
