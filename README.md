@@ -57,7 +57,7 @@ Find more about me:
   </a>
   
   <p align="center" style="display:inline-block">
-     <a href="https://podcasters.spotify.com/pod/show/taric-ov0">
+     <a href="https://podcasters.spotify.com/pod/show/thesamuraination">
     <img src="https://img.shields.io/badge/Taric%20Ov-1DB954?style=flat&logo=spotify&logoColor=white" alt="Taric Ov's Spotify Podcast" />
   </a>
   </p>
